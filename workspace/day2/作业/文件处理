@@ -1,0 +1,24 @@
+S.find  可制定的范围内查找返回索引值，否则返回-1
+S.rfind 反向查找
+S.index 和find相似，只是找不到的话会报错
+S.rindex 反向超找
+S.count  返回找到的字符串的个数
+
+
+
+S.split   将字符串转list,以空格切分
+S.join    将list转为字符串，以空格分割
+
+
+处理字符串的内置函数
+len(str)   字符串的串的长度
+cmp()      字符串的比较
+max()
+min
+
+x.startswith()  x字符串以什么为开头
+错误为False  正确 True
+
+
+
+   

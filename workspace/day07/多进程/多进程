@@ -1,0 +1,4 @@
+起多进程的方法：
+1、pool.map()
+2、Process
+3.pool.apply_async()

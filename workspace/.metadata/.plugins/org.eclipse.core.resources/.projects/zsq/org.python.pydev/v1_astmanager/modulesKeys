@@ -1,0 +1,15 @@
+MODULES_MANAGER_V2
+BBS.BBS.__init__|C:\Users\hantao\workspace\zsq\BBS\BBS\__init__.py
+BBS.BBS.settings|C:\Users\hantao\workspace\zsq\BBS\BBS\settings.py
+BBS.BBS.urls|C:\Users\hantao\workspace\zsq\BBS\BBS\urls.py
+BBS.BBS.wsgi|C:\Users\hantao\workspace\zsq\BBS\BBS\wsgi.py
+BBS.app01.__init__|C:\Users\hantao\workspace\zsq\BBS\app01\__init__.py
+BBS.app01.admin|C:\Users\hantao\workspace\zsq\BBS\app01\admin.py
+BBS.app01.apps|C:\Users\hantao\workspace\zsq\BBS\app01\apps.py
+BBS.app01.migrations.__init__|C:\Users\hantao\workspace\zsq\BBS\app01\migrations\__init__.py
+BBS.app01.models|C:\Users\hantao\workspace\zsq\BBS\app01\models.py
+BBS.app01.tests|C:\Users\hantao\workspace\zsq\BBS\app01\tests.py
+BBS.app01.urls|C:\Users\hantao\workspace\zsq\BBS\app01\urls.py
+BBS.app01.views|C:\Users\hantao\workspace\zsq\BBS\app01\views.py
+BBS.manage|C:\Users\hantao\workspace\zsq\BBS\manage.py
+snippet|C:\Users\hantao\workspace\zsq\snippet.py

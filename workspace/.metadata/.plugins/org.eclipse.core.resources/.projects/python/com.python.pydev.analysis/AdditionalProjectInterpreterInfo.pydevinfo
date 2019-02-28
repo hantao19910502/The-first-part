@@ -1,0 +1,19 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\python\com.python.pydev.analysis\v2_indexcache
+main.__init__|1465541874905000000|C:\Users\hantao\workspace\python\src\main\__init__.py
+main.index|1517486870557134000|C:\Users\hantao\workspace\python\src\main\index.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=main.index
+-- END DICTIONARY
+-- START TREE 1
+3
+age|1|age!11@
+msg|1|msg!11@
+nam|1|name!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

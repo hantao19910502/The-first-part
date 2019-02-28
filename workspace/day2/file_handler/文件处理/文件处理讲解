@@ -1,0 +1,120 @@
+模式            描述
+r       以读方式打开文件，可读取文件信息.文件必须已存在
+w       以写方式打开文件，可向文件写入信息。存在则清空，不存在创建
+a       以追加方式打开文件，文件指针自动移到文件尾。追加
+r+      以读写方式打开文件，可对文件进行读和写操作。
+w+      消除文件内容，然后以读写方式打开文件。
+a+      以读写方式打开文件，并把文件指针移到文件尾。
+b       以二进制模式打开文件，而不是以文本模式。该模式只对Windows或Dos有效，类Unix的文件是用二进制模式进行操作的
+
+
+====================================================
+file的方法：
+对文件实力：
+f = file('/etc/passwd','r')
+
+for line in f.readlines()
+	line = line.split('\n')    #脱掉换行符（split将文件变成列表）
+	print line
+
+
+=========================================================
+举例说明：
+
+1.write
+>>> f = file('hantao.txt','w+')
+>>> f.write('hantao\n') 
+>>> f.flush()
+
+
+2.write w  写入
+>>> f = file('hantao.txt','w')
+>>> f.write(u'巴别'.encode('utf-8'))
+>>> f.flush()
+[hantao@test164 python]$ more hantao.txt 
+巴别
+
+3.wrire a  追加
+>>> f = file('hantao.txt','a')
+>>> f.write(u'韩涛'.encode('utf-8'))
+>>> f.flush()
+>>> 
+[hantao@test164 python]$ cat hantao.txt 
+巴别韩涛
+
+
+4.跳到文件的某个位置（主要用于文件开头）
+>>> f = file('/etc/passwd','r') 
+>>> f.tell() 
+0
+>>> f.seek(12)     #跳跃到12个字节的位置
+>>> f.tell()       #看一下这个位置
+12
+>>> f.readline()
+'oot:/root:/bin/bash\n'
+
+5.f.truncate()截取文件的多少个字节
+[hantao@test164 python]$ vim hantao.txt 
+对不起老婆，请原谅我幼稚的小情绪吧。当你大声咆哮的时候我已经害怕了，害怕你真的会不要我。
+所以毫不犹豫的认错了，因为我是爱你的啊。你可以现在不原谅我，但是老婆起请求你在生气也别
+>>> f = file('hantao.txt','r+')
+>>> f.truncate(30)             
+>>> f.flush()
+>>> 
+[hantao@test164 python]$ cat hantao.txt 
+对不起老婆，请原谅我
+
+6.f.name  显示文件名
+>>> f = file('hh','r')
+>>> f.name
+'hh'
+
+7.f.mode 显示文件的访问模式
+>>> f.mode
+'r'
+
+以上总结：
+总结：
+----------------------------------------------------------------
+file.name        文件名
+file.encoding    文件使用编码,None 时使用系统默认编码
+file.mode Access 文件打开时使用的额访问模式
+file.closed      表文件已关闭，否则False
+file.newlines    未读取到分隔符时为None，包含行结束符的列表
+file.softspace   为0表示在输出一数据后，加上一空格，1表示不加，内部使用
+范例1：
+[hantao@test164 python]$ cat f.py 
+#!/usr/bin/env python
+#!_*_coding:utf-8_*_
+
+f = file('hantao.txt','rw')
+
+print f.name
+print f.encoding
+print f.mode 
+print f.closed
+print f.newlines
+print f.softspace
+[hantao@test164 python]$ python f.py 
+hantao.txt
+None
+rw
+False
+None
+0
+---------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

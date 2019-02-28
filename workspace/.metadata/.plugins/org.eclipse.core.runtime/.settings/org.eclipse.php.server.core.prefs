@@ -1,0 +1,3 @@
+defaultPHPServer=Default PHP Web Server
+eclipse.preferences.version=1
+phpServers=<server><name>Default PHP Web Server</name><base_url>http\://127.0.0.1</base_url><hostname>127.0.0.1</hostname><port>-1</port><document_root>C\:\\wamp64\\www</document_root></server>

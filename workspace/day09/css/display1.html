@@ -1,0 +1,29 @@
+<html> 
+<head> 
+<script type="text/javascript"> 
+function removeElement()  
+{  
+document.getElementById("p1").style.display="none";  
+}  
+function Element()  
+{  
+document.getElementById("p1").style.display="block"; 
+}  
+</script> 
+</head> 
+<body> 
+ 
+<h1>Hello</h1> 
+ 
+<p id="p1">This is some text. This is some text. This is some text.  
+This is some text. This is some text. This is some text.  
+This is some text. This is some text. This is some text.</p> 
+ 
+<input type="submit" onclick="removeElement()" 
+value="Do not display paragraph" /> 
+<div>
+<input type="submit" onclick="Element()" 
+value="display paragraph" />  
+</div>
+</body> 
+</html> 

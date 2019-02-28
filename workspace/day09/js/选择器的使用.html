@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>页面1</title>
+		<style>js1</style>
+		<body>
+			<div id='t1'><a>zhanqian0</a>hantao0</div>
+			<div name='n1'><a>zhanqian0</a>hantao0</div>
+			<div name='n1'><a>zhanqian0</a>hantao0</div>
+			<script type='text/javascript'>
+				/*
+				//===================ID==========================
+				//全部打印成字符串类型
+				var id1=document.getElementById('t1')
+				console.log(id1.innerText)
+				id1.innerText = 'alex';
+				//识别列表的字符
+				var id1=document.getElementById('t1')
+				console.log(id1.innerHTML);
+				id1.innerHTML = 'alex';
+				*/
+				/*
+				//======================name============================
+				var names = document.getElementsByName('n1');
+				//names[0].innerText = 'alex';
+				//names[1].innerText = 'alex';
+				for(var item in names){
+					names[item].innerText = 'alex';
+				} 
+				*/
+				//====================tag==============================
+				var names = document.getElementsByTagName('div');
+				for(var item in names){
+					names[item].innerText = 'alex';
+				} 
+				
+				
+			</script>
+		</body>
+	</head>
+</html>

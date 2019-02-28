@@ -1,0 +1,101 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\¡∑œ∞Ã‚\com.python.pydev.analysis\v2_indexcache
+1.listnode|1523759923280464000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\listnode.py
+1.urllib2_test1|1495099164436220000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\urllib2_test1.py
+1.listnode1|1523787973381631000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\listnode1.py
+1.__init__|1479089955920085000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\__init__.py
+1.urllib2_test|1495098702644854000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\urllib2_test.py
+1.017|1479189856341845000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\017.py
+1.008|1479121394713421000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\008.py
+1.2|1495106295398472000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\2.py
+1.020|1479189873598876000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\020.py
+1.urllib2_test2|1495106295348472000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\urllib2_test2.py
+1.021|1479199969104224000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\021.py
+1.011|1479179114725506000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\011.py
+1.012|1479180180130135000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\012.py
+1.023|1479200431643680000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\023.py
+1.056|1479201015310064000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\056.py
+1.002|1479102324888689000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\002.py
+1.013|1479181934087661000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\013.py
+1.003|1479103195764500000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\003.py
+1.004|1479119035375474000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\004.py
+1.026|1479200518585653000|C:\Users\hantao\workspace\¡∑œ∞Ã‚\1\026.py
+-- END DISKCACHE
+-- START DICTIONARY
+26
+24=ListNode_handle.add
+10=1.listnode1
+12=1.017
+26=ListNode.__init__
+25=ZabbixTools.__init__
+6=1.urllib2_test2
+1=1.011
+5=1.056
+11=1.012
+13=1.013
+21=Solution
+22=ZabbixTools.user_login
+2=1.listnode
+16=1.urllib2_test1
+19=ListNode_handle
+18=ListNode
+20=ZabbixTools
+9=1.urllib2_test
+17=1.2
+8=1.020
+14=1.021
+23=ListNode_handle.__init__
+4=1.002
+15=1.003
+3=1.004
+7=1.026
+-- END DICTIONARY
+-- START TREE 1
+31
+a|1|a!11@
+aa|1|aa!19@
+ano|2|another_dtstr!27@another_dt!27@
+arr|1|arr!35@
+b|1|b!11@
+can|1|canvas!43@
+dat|1|data!51@
+dt|1|dt!27@
+dts|1|dtstr!27@
+eng|1|eng!35@
+fun|1|fun!58@
+h|1|h!67@
+htm|1|html!75@
+j|1|j!43@
+k|1|k!43@
+l1|1|l1!19@
+l1_|1|l1_list!19@
+lis|4|ListNode_1!19@ListNode!81@ListNode!17@ListNode_handle!17@
+mai|3|main!90@main!98@main!106@
+n|1|n!115@
+num|1|num!123@
+r|1|r!35@
+rat|1|rat!35@
+req|2|req!51@req!131@
+res|3|response!75@response!131@response!51@
+s|1|s!67@
+sol|1|Solution!81@
+the|2|the_page!51@the_page!131@
+url|1|url!51@
+val|1|values!51@
+zab|1|ZabbixTools!137@
+-- END TREE
+-- START TREE 2
+11
+__i|4|__init__!18&18@__init__!19&18@__init__!18&82@__init__!20&138@
+_re|1|_reverse!19&18@
+add|2|add!19&18@addTwoNumbers!21&82@
+aut|1|authID!22&139@
+cur|2|cur_node!23&19@cur_node!24&19@
+hea|1|header!25&139@
+nex|2|next!26&83@next!26&19@
+pri|1|print_ListNode!19&18@
+url|1|url!25&139@
+use|1|user_login!20&138@
+val|2|val!26&19@val!26&83@
+-- END TREE

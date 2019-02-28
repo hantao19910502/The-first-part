@@ -1,0 +1,23 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\day01\com.python.pydev.analysis\v2_indexcache
+作业.登入|1508829904251004000|C:\Users\hantao\workspace\day01\作业\登入.py
+作业.__init__|1479804267420744000|C:\Users\hantao\workspace\day01\作业\__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=作业.登入
+-- END DICTIONARY
+-- START TREE 1
+7
+acc|1|account_file!11@
+f|1|f!11@
+loc|2|lock_file!11@lock_check!11@
+mat|1|match_flag!11@
+pas|1|password!11@
+ret|2|retry_limit!11@retry_count!11@
+use|1|username!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

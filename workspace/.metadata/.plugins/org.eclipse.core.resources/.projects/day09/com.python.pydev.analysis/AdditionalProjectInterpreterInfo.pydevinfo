@@ -1,0 +1,18 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\day09\com.python.pydev.analysis\v2_indexcache
+HTML.__init__|1476493604802481000|C:\Users\hantao\workspace\day09\HTML\__init__.py
+HTML.Server|1476493839876800000|C:\Users\hantao\workspace\day09\HTML\Server.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=HTML.Server
+-- END DICTIONARY
+-- START TREE 1
+2
+han|1|handle_request!10@
+mai|1|main!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

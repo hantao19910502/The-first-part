@@ -1,0 +1,14 @@
+help()
+dir()
+vars()
+type()
+type()
+import temp
+reload(temp)
+id()
+
+www.cnblogs.com/wupeiqi/articles/4276448.html   武沛齐内置函数总结
+
+
+
+

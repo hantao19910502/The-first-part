@@ -1,0 +1,76 @@
+{% extends 'web/ziban.html' %}
+{% block mass_addhost %}
+    <h3>添加主机</h3>
+        <form  action='/web/test/' method='POST'>
+            <textarea  name="hostname" placeholder="可以添加多个主机"></textarea>
+            <p><textarea name='ip'  placeholder="可以添加多个ip"></textarea></p>
+            <h3>主机组</h3>
+            <select name="groupid">
+                <option value="77">meishi</option>
+                <option value="64">SG2</option>
+                <option value="65">DanJi</option>
+                <option value="62">dasheng</option>
+                <option value="49">Japan-SanGuo-IDC</option>
+                <option value="50">Korea-SanGuo-IDC</option>
+                <option value="44">Russia-IDC</option>
+                <option value="65">SanGuo</option>
+                <option value="54">SJS-HZW-IDC</option>
+                <option value="22">Taipei-HZW-UC</option>
+                <option value="39">Thailand-HZW</option>
+                <option value="40">Thailand-HZW-IOS</option>
+                <option value="43">TW-IDC</option>
+                <option value="45">TW-SangGuo-IDC</option>
+                <option value="41">Vietnamese-hzw</option>
+                <option value="42">Vietnamese-soha</option>
+                <option value="59">web</option>
+                <option value="63">YUNWEI</option>
+                <option value="56">HZKP</option>
+                <option value="66">DaiLi</option>
+                <option value="69">hadoop</option>
+                <option value="55">buluo</option>
+                <option value="74">Warship</option>
+                <option value="77">meishi</option>
+                <option value="79">SG2-VN-IDC</option>
+                <option value="81">TAIWAN_SG2</option>
+                <option value="80">FKDWC</option>
+                <option value="73">TW_BDX</option>
+                <option value="82">SG2-TH-IDC</option>
+            </select>
+            <h3>主机模版</h3>
+            <table border='0'>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="10107" />general-module </label></td>
+                <td><label><input name="templateid" type="checkbox" value="10106" />battle-module </label></td>
+            </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="10127" />haiwai-general-module </label></td>
+                <td><label><input name="templateid" type="checkbox" value="10108" />logic-module </label></td>
+            </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="10109" />main-module </label></td>
+                <td><label><input name="templateid" type="checkbox" value="10110" />mdb-module </label></td>
+             </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="11082" />memcached-model </label></td>
+                <td><label><input name="templateid" type="checkbox" value="11098" />Nginx-model </label></td>
+            </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="10111" />sdb-module </label></td>
+                <td><label><input name="templateid" type="checkbox" value="11255" />sdb-module_web </label></td>
+            </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="11365" />Template-3750-x64 </label></td>
+                <td><label><input name="templateid" type="checkbox" value="11257" />php-model </label></td>
+             </tr>
+             <tr>
+                <td><label><input name="templateid" type="checkbox" value="12203" />logic-mysql-module </label></td>
+             </tr>
+                </table>
+        {% ifequal status  "主机信息不完整"%}
+            <p><input type='submit' value="添加"></p><span style='color:red'>{{status}}</span>
+        {%  else %}
+            <p><input type='submit' value="添加"></p><span style='color:green'>{{status}}</span>
+        {%  endifequal %}
+
+
+{% endblock %}

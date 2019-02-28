@@ -1,0 +1,19 @@
+
+
+encode 转码
+decode 解码
+=============================================
+导入模块
+import xxxxx
+from xxx import xxx
+import xxx as xxx    起个别名
+
+=============================================
+python执行shell命令的方法
+	1、import os --> os.system('执行命令') -->返回执行结果的状态码
+	2、import os -->os.popen('执行命令')   -->执行命令的结果
+	3.import commands  -->commands.getstatusoutput('执行命令')
+	-->同时打印执行命令的状态和结果
+	
+
+	

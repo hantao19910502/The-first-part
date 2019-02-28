@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Form</h1>
+	<form action="app03/index/" method="POST">
+		<div>
+			<div>
+				{{data.username}}
+			</div>
+			<div>
+				{{data.email}}
+			</div>
+			
+			<div>
+				{{data.date}}
+			</div>
+			
+			<input type='submit' values='提交'><label style="color:red;">{{ error.as_ul }}</label>
+		    <!--  error.as_ul-->
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+============三元运算=============
+代码实例
+result='gt' if 1>3 else 'lt'
+print result
+
+==========Lambda表达式============
+代码实例
+a = lambda x,y:x+y
+print a(4,10)
+
+
+
+

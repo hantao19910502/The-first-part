@@ -1,0 +1,29 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\day2\com.python.pydev.analysis\v2_indexcache
+file_handler.__init__|1469242750804968000|C:\Users\hantao\workspace\day2\file_handler\__init__.py
+file_handler.集合.__init__|1474003793211575000|C:\Users\hantao\workspace\day2\file_handler\集合\__init__.py
+file_handler.字典处理.name|1473604194541663000|C:\Users\hantao\workspace\day2\file_handler\字典处理\name.py
+file_handler.文件处理.file_write_realine|1472350780252205000|C:\Users\hantao\workspace\day2\file_handler\文件处理\file_write_realine.py
+file_handler.元组.__init__|1473433580124102000|C:\Users\hantao\workspace\day2\file_handler\元组\__init__.py
+file_handler.字典处理.__init__|1473433543754030000|C:\Users\hantao\workspace\day2\file_handler\字典处理\__init__.py
+file_handler.文件处理.__init__|1472348669373293000|C:\Users\hantao\workspace\day2\file_handler\文件处理\__init__.py
+file_handler.文件处理.file_write|1472349494390331000|C:\Users\hantao\workspace\day2\file_handler\文件处理\file_write.py
+file_handler.列表处理.__init__|1469242750804000000|C:\Users\hantao\workspace\day2\file_handler\列表处理\__init__.py
+file_handler.字符串的处理.__init__|1472781407354929000|C:\Users\hantao\workspace\day2\file_handler\字符串的处理\__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+3=file_handler.字典处理.name
+2=file_handler.文件处理.file_write_realine
+1=file_handler.文件处理.file_write
+-- END DICTIONARY
+-- START TREE 1
+3
+f|2|f!11@f!19@
+fil|1|FilePath!19@
+nam|1|name_info!27@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

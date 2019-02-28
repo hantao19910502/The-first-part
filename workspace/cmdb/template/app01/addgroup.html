@@ -1,0 +1,9 @@
+{% extends 'app01/index.html' %}
+{% block addgroup %}
+     <h3>ADD GROUP</h3>
+     <form action="/app01/addgroup/" method='POST'>
+	     <textarea  name="groupname" placeholder="groupname"></textarea>
+	     <p><textarea  name="groupbase" placeholder="groupbase"></textarea></p>
+	     <p><input type='submit' value="add"></p>
+     </form>
+{% endblock %}

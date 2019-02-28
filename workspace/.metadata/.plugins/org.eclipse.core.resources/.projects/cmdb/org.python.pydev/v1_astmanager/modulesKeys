@@ -1,0 +1,17 @@
+MODULES_MANAGER_V2
+app01.__init__|C:\Users\hantao\workspace\cmdb\app01\__init__.py
+app01.admin|C:\Users\hantao\workspace\cmdb\app01\admin.py
+app01.apps|C:\Users\hantao\workspace\cmdb\app01\apps.py
+app01.migrations.0001_initial|C:\Users\hantao\workspace\cmdb\app01\migrations\0001_initial.py
+app01.migrations.0002_grouptask|C:\Users\hantao\workspace\cmdb\app01\migrations\0002_grouptask.py
+app01.migrations.0003_host|C:\Users\hantao\workspace\cmdb\app01\migrations\0003_host.py
+app01.migrations.__init__|C:\Users\hantao\workspace\cmdb\app01\migrations\__init__.py
+app01.models|C:\Users\hantao\workspace\cmdb\app01\models.py
+app01.tests|C:\Users\hantao\workspace\cmdb\app01\tests.py
+app01.urls|C:\Users\hantao\workspace\cmdb\app01\urls.py
+app01.views|C:\Users\hantao\workspace\cmdb\app01\views.py
+cmdb.__init__|C:\Users\hantao\workspace\cmdb\cmdb\__init__.py
+cmdb.settings|C:\Users\hantao\workspace\cmdb\cmdb\settings.py
+cmdb.urls|C:\Users\hantao\workspace\cmdb\cmdb\urls.py
+cmdb.wsgi|C:\Users\hantao\workspace\cmdb\cmdb\wsgi.py
+manage|C:\Users\hantao\workspace\cmdb\manage.py

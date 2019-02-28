@@ -1,0 +1,20 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\zsq\com.python.pydev.analysis\v2_indexcache
+snippet|1520083921897126000|C:\Users\hantao\workspace\zsq\snippet.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=snippet
+-- END DICTIONARY
+-- START TREE 1
+5
+aft|1|after_index!10@
+bef|1|before_index!10@
+fil|1|filter!10@
+ind|2|index!10@INDEX!10@
+sho|1|show!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

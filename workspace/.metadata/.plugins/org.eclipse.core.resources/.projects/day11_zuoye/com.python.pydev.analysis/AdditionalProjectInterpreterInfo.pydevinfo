@@ -1,0 +1,64 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\day11_zuoye\com.python.pydev.analysis\v2_indexcache
+day11_zuoye.settings|1494152499992624000|C:\Users\hantao\workspace\day11_zuoye\day11_zuoye\settings.py
+app02.apps|1494129327634882000|C:\Users\hantao\workspace\day11_zuoye\app02\apps.py
+appe.migrations.__init__|1494126263578000000|C:\Users\hantao\workspace\day11_zuoye\appe\migrations\__init__.py
+appe.__init__|1494126263566000000|C:\Users\hantao\workspace\day11_zuoye\appe\__init__.py
+appe.admin|1494126263516000000|C:\Users\hantao\workspace\day11_zuoye\appe\admin.py
+appe.apps|1494152491445000000|C:\Users\hantao\workspace\day11_zuoye\appe\apps.py
+app02.migrations.__init__|1494129327677383000|C:\Users\hantao\workspace\day11_zuoye\app02\migrations\__init__.py
+appe.views|1494152491563000000|C:\Users\hantao\workspace\day11_zuoye\appe\views.py
+app02.admin|1494129327627382000|C:\Users\hantao\workspace\day11_zuoye\app02\admin.py
+appe.urls|1494152491361000000|C:\Users\hantao\workspace\day11_zuoye\appe\urls.py
+day11_zuoye.urls|1494152491481730000|C:\Users\hantao\workspace\day11_zuoye\day11_zuoye\urls.py
+app02.models|1494129327642383000|C:\Users\hantao\workspace\day11_zuoye\app02\models.py
+app02.tests|1494129327649883000|C:\Users\hantao\workspace\day11_zuoye\app02\tests.py
+appe.migrations.urls|1494152491398000000|C:\Users\hantao\workspace\day11_zuoye\appe\migrations\urls.py
+appe.models|1494126263538000000|C:\Users\hantao\workspace\day11_zuoye\appe\models.py
+manage|1494128999662227000|C:\Users\hantao\workspace\day11_zuoye\manage.py
+day11_zuoye.wsgi|1494126114448415000|C:\Users\hantao\workspace\day11_zuoye\day11_zuoye\wsgi.py
+appe.tests|1494126263548000000|C:\Users\hantao\workspace\day11_zuoye\appe\tests.py
+app02.views|1494129327657383000|C:\Users\hantao\workspace\day11_zuoye\app02\views.py
+day11_zuoye.__init__|1494126114453416000|C:\Users\hantao\workspace\day11_zuoye\day11_zuoye\__init__.py
+app02.__init__|1494129327664883000|C:\Users\hantao\workspace\day11_zuoye\app02\__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+10
+10=App02Config
+1=day11_zuoye.settings
+3=day11_zuoye.wsgi
+2=app02.apps
+8=appe.apps
+4=appe.views
+9=WebConfig
+5=appe.urls
+6=day11_zuoye.urls
+7=appe.migrations.urls
+-- END DICTIONARY
+-- START TREE 1
+19
+all|1|ALLOWED_HOSTS!11@
+app|2|App02Config!17@application!27@
+aut|1|AUTH_PASSWORD_VALIDATORS!11@
+bas|1|BASE_DIR!11@
+dat|1|DATABASES!11@
+deb|1|DEBUG!11@
+ins|1|INSTALLED_APPS!11@
+lan|1|LANGUAGE_CODE!11@
+log|1|login!34@
+mid|1|MIDDLEWARE!11@
+roo|1|ROOT_URLCONF!11@
+sec|1|SECRET_KEY!11@
+sta|2|STATIC_URL!11@STATICFILES_DIRS!11@
+tem|2|TEMPLATE_DIRS!11@TEMPLATES!11@
+tim|1|TIME_ZONE!11@
+url|3|urlpatterns!43@urlpatterns!51@urlpatterns!59@
+use|3|USE_L10N!11@USE_I18N!11@USE_TZ!11@
+web|1|WebConfig!65@
+wsg|1|WSGI_APPLICATION!11@
+-- END TREE
+-- START TREE 2
+1
+nam|2|name!9&67@name!10&19@
+-- END TREE

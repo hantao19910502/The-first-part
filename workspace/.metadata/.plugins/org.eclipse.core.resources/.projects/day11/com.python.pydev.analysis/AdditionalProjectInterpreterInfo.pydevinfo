@@ -1,0 +1,30 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\day11\com.python.pydev.analysis\v2_indexcache
+Django1|1490519765891000000|C:\Users\hantao\workspace\day11\Django1.py
+Django|1490522877935352000|C:\Users\hantao\workspace\day11\Django.py
+Controller.Admin|1490530481353739000|C:\Users\hantao\workspace\day11\Controller\Admin.py
+Controller.access|1490522372340252000|C:\Users\hantao\workspace\day11\Controller\access.py
+Model.__init__|1490522160650542000|C:\Users\hantao\workspace\day11\Model\__init__.py
+View.__init__|1490522171001701000|C:\Users\hantao\workspace\day11\View\__init__.py
+Controller.__init__|1490522127686033000|C:\Users\hantao\workspace\day11\Controller\__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+2=Django1
+1=Django
+4=Controller.Admin
+3=Controller.access
+-- END DICTIONARY
+-- START TREE 1
+6
+htt|2|httpd!11@httpd!19@
+ind|1|Index!26@
+log|4|Login!34@Logout!34@logout!18@login!18@
+man|1|Manage!26@
+run|2|RunServer!10@RunServer!18@
+url|2|url!19@url!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

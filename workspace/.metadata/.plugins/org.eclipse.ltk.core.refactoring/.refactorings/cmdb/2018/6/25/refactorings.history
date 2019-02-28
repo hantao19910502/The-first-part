@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;cmdb/template/app01/server.html&apos; to &apos;addgroup.html&apos;" description="Rename resource &apos;server.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="template/app01/server.html" name="addgroup.html" stamp="1529298294633" updateReferences="true"/>
+</session>

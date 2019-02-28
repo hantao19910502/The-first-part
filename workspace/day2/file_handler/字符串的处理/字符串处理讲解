@@ -1,0 +1,86 @@
+
+范例：======
+=====================find  正向查找   找不到 -1=================
+>>> msg = "what's your company name?" 
+>>> msg.find('name')
+20
+>>> msg.find('what')
+0
+>>> msg.find('your')
+7
+>>> msg.find('your23')
+-1
+=====================rfind 反向查找==========================
+>>> msg.rfind('your') 
+7
+=====================index和find差不多，区别是找不到报错===========
+>>> msg.index('name')
+20
+>>> msg.index('name12')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+
+例子：======
+======================caplitalize     首字母大写===================
+>>> msg
+"what's your name"
+>>> msg.capitalize()
+"What's your name"
+=====================upper      全部大写==========================
+>>> msg.upper()     
+"WHAT'S YOUR NAME"
+=====================lower      全部小写==========================
+>>> msg.lower()
+"what's your name"
+=====================字符串嫁接=====================================
+>>> msg +='HAN'
+>>> msg
+"what's your nameHAN"
+=====================swapcase    大小写互换=======================
+>>> msg.swapcase()
+"WHAT'S YOUR NAMEhan"
+=====================将字符串变为列表（指定分隔符）==================
+>>> msg.split()
+["what's", 'your', 'nameHAN']
+>>> msg.split("'")
+['what', 's your nameHAN']
+====================''.join     用什么代替分割符==================
+>>> '|'.join(msg) 
+"w|h|a|t|'|s| |y|o|u|r| |n|a|m|e|H|A|N"
+>>> msg_list = msg.split("'")
+>>> msg_list
+['what', 's your nameHAN']
+>>> '|'.join(msg_list)
+'what|s your nameHAN'
+>>> '____'.join(msg_list) 
+'what____s your nameHAN'
+
+>>> a = ['a','l','x','e']
+>>> b ='a' 
+>>> b +='l' 
+>>> b +='x'
+>>> b +='e'
+>>> ''.join(a)      两种方法的效果是一样的，前者是开辟了五次的内存空间，后者只是开辟了一次的内存空间。
+'alxe'
+>>> b
+'alxe'
+========================字符串的内置函数=====================
+处理字符串的内置函数：
+len(str)          字符串长度
+cmp("mysql",str)  字符串比较，第一个大，返回1
+max('abcdec')     寻找字符串中最大的字符（）
+min('adb')        寻找字符中最小的字符
+
+>>> x='AB1'
+>>> y='AB2'
+>>> cmp(x,y)
+-1
+>>> x='AB3'
+>>> cmp(x,y)
+1
+>>> ord('1')
+49
+>>> ord('2') 
+50
+

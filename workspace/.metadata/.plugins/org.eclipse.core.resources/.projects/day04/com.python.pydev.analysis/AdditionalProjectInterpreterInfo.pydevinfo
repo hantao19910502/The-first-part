@@ -1,0 +1,104 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\day04\com.python.pydev.analysis\v2_indexcache
+自定义异常和手动触发异常.__init__|1467527970572472000|C:\Users\hantao\workspace\day04\自定义异常和手动触发异常\__init__.py
+test|1481340074437287000|C:\Users\hantao\workspace\day04\test.py
+backend.admin|1466908930205000000|C:\Users\hantao\workspace\day04\backend\admin.py
+异常处理流程.backend.account|1467526190924639000|C:\Users\hantao\workspace\day04\异常处理流程\backend\account.py
+task.job|1481523443031261000|C:\Users\hantao\workspace\day04\task\job.py
+异常处理流程.index|1467528261346884000|C:\Users\hantao\workspace\day04\异常处理流程\index.py
+backend.__init__|1467639770211682000|C:\Users\hantao\workspace\day04\backend\__init__.py
+task.__init__|1467639770211000000|C:\Users\hantao\workspace\day04\task\__init__.py
+task.person|1481523439390454000|C:\Users\hantao\workspace\day04\task\person.py
+backend.web|1466908930265000000|C:\Users\hantao\workspace\day04\backend\web.py
+backend.account|1466907207191000000|C:\Users\hantao\workspace\day04\backend\account.py
+relalf.index|1480042721680921000|C:\Users\hantao\workspace\day04\relalf\index.py
+task.University|1467885134631444000|C:\Users\hantao\workspace\day04\task\University.py
+异常处理流程.__init__|1467526108843495000|C:\Users\hantao\workspace\day04\异常处理流程\__init__.py
+task.jieju|1481522707705936000|C:\Users\hantao\workspace\day04\task\jieju.py
+task.car|1481522707081935000|C:\Users\hantao\workspace\day04\task\car.py
+task.index|1480042352988924000|C:\Users\hantao\workspace\day04\task\index.py
+自定义异常和手动触发异常.index|1467552546764999000|C:\Users\hantao\workspace\day04\自定义异常和手动触发异常\index.py
+异常处理流程.backend.__init__|1467526108874695000|C:\Users\hantao\workspace\day04\异常处理流程\backend\__init__.py
+relalf.__init__|1467639770211000000|C:\Users\hantao\workspace\day04\relalf\__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+24
+7=test
+9=backend.admin
+12=异常处理流程.backend.account
+8=task.job
+3=异常处理流程.index
+15=jieju.__init__
+22=Information.__init__
+4=task.person
+16=Coll
+18=Information
+14=backend.web
+2=relalf.index
+13=backend.account
+24=Coll.__init__
+6=task.University
+11=task.jieju
+19=Car
+5=task.car
+20=jieju
+1=task.index
+23=Car.__init__
+21=Job.__init__
+10=自定义异常和手动触发异常.index
+17=Job
+-- END DICTIONARY
+-- START TREE 1
+32
+aa|1|aa!11@
+arr|3|array!11@array!19@array!27@
+b1|1|b1!35@
+b2|1|b2!35@
+bao|1|baoma!43@
+ben|1|benchi!43@
+bjd|1|bjdx!51@
+car|1|Car!41@
+cho|1|chois!59@
+col|1|Coll!49@
+cou|1|count!59@
+dat|3|data!11@data!27@data!19@
+daz|1|dazhong!43@
+fun|3|func!19@func!27@func!11@
+guo|2|GuoZuo!66@guoqi!67@
+han|3|hantao!74@hantao!82@hantao!43@
+inf|1|Information!33@
+j1|1|j1!91@
+j2|1|j2!91@
+jie|2|jieju!89@JieGuo!90@
+job|1|Job!65@
+kai|1|KaiChe!42@
+log|4|login!98@login!106@logout!98@logiout!106@
+mod|3|mode!19@mode!27@mode!11@
+pri|1|print_info!59@
+qia|1|qianqian!43@
+res|1|res!83@
+siq|1|siqi!67@
+tjd|1|tjdx!51@
+use|3|userspace!19@userspace!27@userspace!11@
+web|1|web!114@
+xia|1|xiali!43@
+-- END TREE
+-- START TREE 2
+15
+JJ|1|JJ!15&91@
+__i|5|__init__!16&50@__init__!17&66@__init__!18&34@__init__!19&42@__init__!20&90@
+__s|1|__Salary!21&67@
+__z|1|__zuohou!20&90@
+age|1|Age!22&35@
+gon|1|gongzuo!17&67@
+got|1|gotoColl!16&50@
+jie|2|JieShao!18&34@jieshao1!18&34@
+kai|1|kaiche!19&42@
+mem|1|memory!17&66@
+nam|4|Name!23&43@Name!24&51@Name!22&35@Name!21&67@
+pag|1|Page!23&43@
+sal|1|Salary!22&35@
+sex|1|Sex!22&35@
+zhe|1|zhe!20&90@
+-- END TREE

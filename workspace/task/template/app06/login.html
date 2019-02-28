@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form method='POST' action='app06/login/'>
+	{% csrf_token %}
+	<p>用户名：<input name='username'/></p>
+	<a>密 码：<input name='password'/></a>
+	<input type='submit' value='提交'/><label style='color:red;'>{{ status }}</label>
+</form>
+</body>
+</html>

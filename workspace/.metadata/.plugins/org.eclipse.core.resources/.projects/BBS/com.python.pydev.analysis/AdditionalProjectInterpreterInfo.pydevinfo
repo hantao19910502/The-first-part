@@ -1,0 +1,88 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\BBS\com.python.pydev.analysis\v2_indexcache
+app01.__init__|1520083461177000000|C:\Users\hantao\workspace\BBS\app01\__init__.py
+app01.migrations.__init__|1520083461181000000|C:\Users\hantao\workspace\BBS\app01\migrations\__init__.py
+BBS.__init__|1520083432588000000|C:\Users\hantao\workspace\BBS\BBS\__init__.py
+app01.models|1520085800818594000|C:\Users\hantao\workspace\BBS\app01\models.py
+app01.tests|1520083461173000000|C:\Users\hantao\workspace\BBS\app01\tests.py
+app01.admin|1521084575825698000|C:\Users\hantao\workspace\BBS\app01\admin.py
+manage|1520083432560000000|C:\Users\hantao\workspace\BBS\manage.py
+app01.migrations.0001_initial|1520085927268826000|C:\Users\hantao\workspace\BBS\app01\migrations\0001_initial.py
+app01.views|1520221098497787000|C:\Users\hantao\workspace\BBS\app01\views.py
+BBS.wsgi|1520083432583000000|C:\Users\hantao\workspace\BBS\BBS\wsgi.py
+BBS.urls|1520084424752887000|C:\Users\hantao\workspace\BBS\BBS\urls.py
+app01.apps|1520083461169000000|C:\Users\hantao\workspace\BBS\app01\apps.py
+BBS.settings|1520085888910632000|C:\Users\hantao\workspace\BBS\BBS\settings.py
+app01.urls|1520085187978541000|C:\Users\hantao\workspace\BBS\app01\urls.py
+-- END DISKCACHE
+-- START DICTIONARY
+16
+1=app01.models
+15=Migration
+10=Admin
+2=app01.views
+6=app01.migrations.0001_initial
+4=BBS.wsgi
+11=NewsType
+8=BBS.urls
+16=App01Config
+12=News
+5=app01.apps
+13=Reply
+14=Chats
+9=UserType
+3=BBS.settings
+7=app01.urls
+-- END DICTIONARY
+-- START TREE 1
+28
+adm|1|Admin!9@
+aft|1|after_index!18@
+all|1|ALLOWED_HOSTS!27@
+app|2|application!35@App01Config!41@
+aut|1|AUTH_PASSWORD_VALIDATORS!27@
+bas|1|BASE_DIR!27@
+bef|1|before_index!18@
+cha|1|Chats!9@
+dat|1|DATABASES!27@
+deb|1|DEBUG!27@
+fil|1|filter!18@
+ind|2|index!18@INDEX!18@
+ins|1|INSTALLED_APPS!27@
+lan|1|LANGUAGE_CODE!27@
+mid|1|MIDDLEWARE!27@
+mig|1|Migration!49@
+new|2|News!9@NewsType!9@
+pro|1|PROJECT_PATH!27@
+rep|1|Reply!9@
+roo|1|ROOT_URLCONF!27@
+sec|1|SECRET_KEY!27@
+sho|1|show!18@
+sta|2|STATICFILES_DIRS!27@STATIC_URL!27@
+tem|2|TEMPLATES!27@TEMPLATE_DIRS!27@
+tim|1|TIME_ZONE!27@
+url|2|urlpatterns!59@urlpatterns!67@
+use|4|USE_I18N!27@UserType!9@USE_TZ!27@USE_L10N!27@
+wsg|1|WSGI_APPLICATION!27@
+-- END TREE
+-- START TREE 2
+17
+__u|6|__unicode__!9&10@__unicode__!10&10@__unicode__!11&10@__unicode__!12&10@__unicode__!13&10@__unicode__!14&10@
+con|2|content!13&11@content!14&11@
+cre|3|create_date!12&11@create_date!13&11@create_date!14&11@
+dep|1|dependencies!15&51@
+dis|2|display!9&11@display!11&11@
+ema|1|email!10&11@
+fav|1|favor_count!12&11@
+ini|1|initial!15&51@
+nam|1|name!16&43@
+new|2|new!13&11@news_type!12&11@
+ope|1|operations!15&51@
+pas|1|password!10&11@
+rep|1|reply_count!12&11@
+sum|1|summary!12&11@
+tit|1|title!12&11@
+url|1|url!12&11@
+use|5|username!10&11@user_type!10&11@user!12&11@user!13&11@user!14&11@
+-- END TREE

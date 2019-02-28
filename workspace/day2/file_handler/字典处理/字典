@@ -1,0 +1,140 @@
+字典
+D.get(key,0)   同list[],多个没有返回缺省值‘0’,
+D.has_key(key)  判断有无該键有返回true,没有则返回false
+D.keys()        返回字典键的列表
+D.values()      以列表的形式返回字典中的值，返回值的列表可包含重复元素
+D.items()		将所有的字典项以列表的形式返回,这些列表的每一项都来自（键，值）,但是项在返回时没有特殊的顺序
+
+
+D.updatae(dict2)   添加合并字典
+D.popitem()     
+
+
+
+字典的操作：
+增：
+>>> name_info['Job']='yunwei'
+>>> name_info['age']=25
+
+改：
+>>> name_info['Job']='gay'
+
+删：
+>>> name_info.pop('Job')      指定key删除
+>>> name_info.popitem()		      随机删除
+
+
+循环的方法：
+name_info = {
+             'name': 'hantao',
+             'salary' : '9000'
+             }
+#打印key
+for item in name_info:
+	print item
+	
+#打印key，value
+方法1：
+for item in name_info:
+	print item,name_info['item']
+方法2：
+for item,value in name_info.items():
+	print item,value
+	
+	
+
+讲解字典里的其他方法：
+1.D.get()
+	1)通过key找到相信的value
+	>>> name_info.get('name')
+	'hantao'
+	2)找不到返回None
+	UU = name_info.get('job')
+	>>> print UU
+	None
+2.D.has_key(key)
+	判断key是否存在的方法：
+	>>> name_info.has_key('job')
+	False
+	>>> name_info['job'] = 'yunwei'
+	>>> name_info.has_key('job')   
+	True
+
+3.D.items && D.iteritems()
+两者的用法大致相同。区别是：
+D.items返回的是列表，D.iteritems放回是迭代器
+	1）D.items
+	>>> name_info.items()
+	[('salary', '9000'), ('name', 'hantao')]
+	>>> type(uu)  
+	<type 'list'>
+	2）D.iteritems
+	>>> uu =  name_info.iteritems()
+	>>> type(uu)
+	<type 'dictionary-itemiterator'>
+4.name_info.setdefault生成默认值
+	没有的话添加上，有的话不改变
+	>>> name_info.setdefault('stuID',1123) 
+	1123
+	>>> name_info
+	{'salary': '9000', 'stuID': 1123, 'name': 'hantao'}
+	>>> name_info.setdefault('stuID',888) 
+	1123
+
+5.update()合并两个字典
+	存在的key更改掉，没有的添加
+	>>> name_info
+	{'salary': '9000', 'stuID': 1123, 'name': 'hantao'}
+	>>> a = {'name':'hanzhiwei','addr':'beijing'}
+	>>> a
+	{'name': 'hanzhiwei', 'addr': 'beijing'}
+	>>> name_info.update(a)
+	>>> name_info
+	{'salary': '9000', 'stuID': 1123, 'name': 'hanzhiwei', 'addr': 'beijing'}
+	>>> 
+
+6.复制的方法：
+	1）相当于一个软连接，一个变了里一个也会跟着变了
+	>>> name_info
+	{'salary': '9000', 'stuID': 1123, 'name': 'hanzhiwei', 'addr': 'beijing'}
+	>>> info = name_info
+	>>> info
+	{'salary': '9000', 'stuID': 1123, 'name': 'hanzhiwei', 'addr': 'beijing'}
+	>>> 
+	2）.浅拷贝
+	这样是相互独立，但是在字典中存在列表的时候就不是相互独立的了
+	（1）没有列表的时候
+	>>> info1 = name_info.copy()
+	>>> info1
+	{'salary': '9000', 'stuID': 1123, 'name': 'hanzhiwei', 'addr': 'beijing'}
+	（2）字典中存在列表的时候
+	>>> name_info['ex_list'] = ['zhangqian','xurongrong']
+	>>> name_info
+	{'salary': '9000', 'ex_list': ['zhangqian', 'xurongrong'], 'name': 'hantao'}
+	>>> info = name_info.copy()
+	>>> info
+	{'salary': '9000', 'ex_list': ['zhangqian', 'xurongrong'], 'name': 'hantao'}
+	验证结果的时候：
+	>>> name_info['ex_list'].append('wangxin')
+	>>> name_info
+	{'salary': '9000', 'ex_list': ['zhangqian', 'xurongrong', 'wangxin'], 'name': 'hantao'}
+	>>> info
+	{'salary': '9000', 'ex_list': ['zhangqian', 'xurongrong', 'wangxin'], 'name': 'hantao'}
+	结论是：
+	在字典中的列表发生改变时候，拷贝的字典的中列表也会跟着改变，并不是完全的独立
+	字典中的copy调用的时候copy模块的copy参数
+	>>> import copy
+	>>> copy.copy(
+	3.深拷贝（可以拷贝完全独立的两个字典）
+	>>> import copy
+	>>> copy.deepcopy()	
+	
+	
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="2" failures="0" finished="true" name="Test Run: 1" tests="0" total_time="null"/>
+<test location="C:/Users/hantao/workspace/test1/src/test/client.py" status="error" test="client" time="0">
+<stdout/>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "C:\&#24212;&#29992;\987900502\FileRecv\eclipse-SDK-450-win32\plugins\org.python.pydev_5.0.0.201605051159\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "C:\Users\hantao\workspace\test1\src\test\client.py", line 8, in <module>
+    client.connect(ip_port)
+  File "C:\Python27\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10061] 
+ERROR: Module: client could not be imported (file: C:/Users/hantao/workspace/test1/src/test/client.py).
+]]></stderr>
+</test>
+<test location="C:/Users/hantao/workspace/test1/src/test/mysql_select.py" status="error" test="mysql_select" time="0">
+<stdout/>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "C:\&#24212;&#29992;\987900502\FileRecv\eclipse-SDK-450-win32\plugins\org.python.pydev_5.0.0.201605051159\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "C:\Users\hantao\workspace\test1\src\test\mysql_select.py", line 15, in <module>
+    aa = conn.execute(sql)
+NameError: name 'sql' is not defined
+ERROR: Module: mysql_select could not be imported (file: C:/Users/hantao/workspace/test1/src/test/mysql_select.py).
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="test1 test"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

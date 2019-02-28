@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>页面1</title>
+		<style>js1</style>
+	</head>
+	<body>
+			<div style='width:500px;background-color:#999;'>
+				<div id='process'  style='width:10%;background-color:green;height:20px;'></div>
+			</div>
+			<script type='text/javascript'>
+				pro = 10;
+				
+				function Foo(){
+					var id = document.getElementById('process');
+					pro = pro + 10;
+					if (pro > 100){
+						//clearInterval(interval)   //终止每段时间的循环
+						clearTimeout(interval)      //超时终止执行
+					}
+					else{
+						id.style.width = pro +'%';
+					}
+				}
+				//interval = setInterval('Foo()',500)  //每一段时间执行一次函数
+				interval = setTimeout('Foo()',500)     //多长时间超时
+			</script>
+	</body>
+</html>

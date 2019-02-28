@@ -1,0 +1,38 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\day07\com.python.pydev.analysis\v2_indexcache
+多进程.__init__|1475741658057909000|C:\Users\hantao\workspace\day07\多进程\__init__.py
+多进程.共享内存Lock|1475826223443698000|C:\Users\hantao\workspace\day07\多进程\共享内存Lock.py
+多进程.内存同步方法|1475819454701887000|C:\Users\hantao\workspace\day07\多进程\内存同步方法.py
+多进程.一基本的多进程的写法|1475830848436836000|C:\Users\hantao\workspace\day07\多进程\一基本的多进程的写法.py
+多进程.共享内存Queue|1475811724544259000|C:\Users\hantao\workspace\day07\多进程\共享内存Queue.py
+多进程.Pool产生多进程|1475827488933211000|C:\Users\hantao\workspace\day07\多进程\Pool产生多进程.py
+多进程.主进程和子进程的关系|1475753459141612000|C:\Users\hantao\workspace\day07\多进程\主进程和子进程的关系.py
+-- END DISKCACHE
+-- START DICTIONARY
+6
+4=多进程.共享内存Lock
+2=多进程.内存同步方法
+5=多进程.一基本的多进程的写法
+1=多进程.共享内存Queue
+3=多进程.主进程和子进程的关系
+6=多进程.Pool产生多进程
+-- END DICTIONARY
+-- START TREE 1
+12
+P|2|P!11@P!19@
+d|1|d!19@
+f|6|f!18@f!26@f!34@f!10@f!42@f!50@
+inf|1|info!26@
+l|1|l!19@
+loc|1|lock!35@
+man|1|manager!19@
+n|1|n!43@
+p|3|p!43@p!27@p!35@
+poo|1|pool!51@
+q|1|q!11@
+res|2|res_list!51@res!51@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

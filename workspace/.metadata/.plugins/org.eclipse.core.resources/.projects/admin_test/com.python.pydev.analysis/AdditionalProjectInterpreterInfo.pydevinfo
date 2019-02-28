@@ -1,0 +1,38 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\admin_test\com.python.pydev.analysis\v2_indexcache
+admin_test.settings|1500012947123771000|C:\Users\hantao\workspace\admin_test\admin_test\settings.py
+admin_test.wsgi|1500012946955762000|C:\Users\hantao\workspace\admin_test\admin_test\wsgi.py
+admin_test.__init__|1500012946958762000|C:\Users\hantao\workspace\admin_test\admin_test\__init__.py
+admin_test.urls|1500012946949761000|C:\Users\hantao\workspace\admin_test\admin_test\urls.py
+manage|1500012946936760000|C:\Users\hantao\workspace\admin_test\manage.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+1=admin_test.settings
+2=admin_test.wsgi
+3=admin_test.urls
+-- END DICTIONARY
+-- START TREE 1
+17
+all|1|ALLOWED_HOSTS!11@
+app|1|application!19@
+aut|1|AUTH_PASSWORD_VALIDATORS!11@
+bas|1|BASE_DIR!11@
+dat|1|DATABASES!11@
+deb|1|DEBUG!11@
+ins|1|INSTALLED_APPS!11@
+lan|1|LANGUAGE_CODE!11@
+mid|1|MIDDLEWARE!11@
+roo|1|ROOT_URLCONF!11@
+sec|1|SECRET_KEY!11@
+sta|1|STATIC_URL!11@
+tem|1|TEMPLATES!11@
+tim|1|TIME_ZONE!11@
+url|1|urlpatterns!27@
+use|3|USE_I18N!11@USE_TZ!11@USE_L10N!11@
+wsg|1|WSGI_APPLICATION!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

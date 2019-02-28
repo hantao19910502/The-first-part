@@ -1,0 +1,15 @@
+MODULES_MANAGER_V2
+ftp.__init__|C:\Users\hantao\workspace\day06\ftp\__init__.py
+ftp.client|C:\Users\hantao\workspace\day06\ftp\client.py
+ftp.server|C:\Users\hantao\workspace\day06\ftp\server.py
+paramiko.__init__|C:\Users\hantao\workspace\day06\paramiko\__init__.py
+paramiko.ssh_keygen|C:\Users\hantao\workspace\day06\paramiko\ssh_keygen.py
+paramiko.ssh_passwd|C:\Users\hantao\workspace\day06\paramiko\ssh_passwd.py
+thead_demo.Mythead|C:\Users\hantao\workspace\day06\thead_demo\Mythead.py
+thead_demo.__init__|C:\Users\hantao\workspace\day06\thead_demo\__init__.py
+thead_demo.index|C:\Users\hantao\workspace\day06\thead_demo\index.py
+thead_demo.thead_Lock|C:\Users\hantao\workspace\day06\thead_demo\thead_Lock.py
+thead_demo.生产者消费者模型|C:\Users\hantao\workspace\day06\thead_demo\生产者消费者模型.py
+thead_demo.生产者消费者模型2|C:\Users\hantao\workspace\day06\thead_demo\生产者消费者模型2.py
+thead_demo.线程交互|C:\Users\hantao\workspace\day06\thead_demo\线程交互.py
+thead_demo.线程交互isSet|C:\Users\hantao\workspace\day06\thead_demo\线程交互isSet.py

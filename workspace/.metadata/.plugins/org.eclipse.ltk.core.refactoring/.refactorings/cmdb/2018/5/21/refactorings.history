@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;cmdb/cmdb&apos; to &apos;123&apos;" description="Rename resource &apos;cmdb&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="cmdb" name="123" stamp="1527228700611" updateReferences="true"/>
+</session>

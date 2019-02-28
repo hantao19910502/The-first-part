@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>页面1</title>
+		<style>js1</style>
+	</head>
+	<body>
+			<div style='width:500px;background-color:#999;'>
+				<div id='process'  style='width:10%;background-color:green;height:20px;'></div>
+			</div>
+			<input type='test'/>
+			<input type='button' value='终止' onclick='stop()'/>
+			<script type='text/javascript'>
+				pro = 10;
+				
+				function Foo(){
+					var id = document.getElementById('process');
+					pro = pro + 90;
+					id.style.width = pro +'%';
+				}
+				interval = setTimeout('Foo()',10000)  
+				function stop(){
+					clearTimeout(interval)
+				}
+			</script>
+	</body>
+</html>

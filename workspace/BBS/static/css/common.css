@@ -1,0 +1,77 @@
+*{
+	margin:0px;
+	padding:0px;
+	
+}
+.pg-header {
+	height: 44px;
+	background-color: #2459a2;
+}
+
+.digg-logo {
+    width: 135px;
+    height: 23px;
+    background: url(/static/images/logo.png) no-repeat 0 0;
+    float: left;
+    margin-top: 11px;
+}
+a {
+    text-decoration: none;
+}
+
+.tb {
+
+    color: #c0cddf;
+    margin-left: -3px;
+    padding: 0 13px 0 16px;
+    display: inline-block;
+    vertical-align: 1px\9;
+	line-height:44px;
+}
+
+.tb:hover {
+	color:#fff;
+	background-color: #204982;	
+}
+
+.action-nav {
+	color: #fff;
+    margin: 0 5px;
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    display: block;
+    vertical-align: 1px\9;
+    height: 44px;
+    left: 867px;
+    padding: 0 20px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+}
+.tb.active {
+	color:#fff;
+	background-color: #204982;	
+}
+
+.tb_a{
+	color: #fff;
+    margin:0 200px;
+    margin-top: 0px;
+    margin-right: 5px;
+    
+    display: line-block;
+    vertical-align: 1px\9;
+    height: 44px;
+    padding: 0 20px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+}
+
+.tb .pg-header-form{
+	
+}

@@ -1,0 +1,15 @@
+MODULES_MANAGER_V2
+BBS.__init__|C:\Users\hantao\workspace\BBS\BBS\__init__.py
+BBS.settings|C:\Users\hantao\workspace\BBS\BBS\settings.py
+BBS.urls|C:\Users\hantao\workspace\BBS\BBS\urls.py
+BBS.wsgi|C:\Users\hantao\workspace\BBS\BBS\wsgi.py
+app01.__init__|C:\Users\hantao\workspace\BBS\app01\__init__.py
+app01.admin|C:\Users\hantao\workspace\BBS\app01\admin.py
+app01.apps|C:\Users\hantao\workspace\BBS\app01\apps.py
+app01.migrations.0001_initial|C:\Users\hantao\workspace\BBS\app01\migrations\0001_initial.py
+app01.migrations.__init__|C:\Users\hantao\workspace\BBS\app01\migrations\__init__.py
+app01.models|C:\Users\hantao\workspace\BBS\app01\models.py
+app01.tests|C:\Users\hantao\workspace\BBS\app01\tests.py
+app01.urls|C:\Users\hantao\workspace\BBS\app01\urls.py
+app01.views|C:\Users\hantao\workspace\BBS\app01\views.py
+manage|C:\Users\hantao\workspace\BBS\manage.py

@@ -1,0 +1,91 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\cmdb\com.python.pydev.analysis\v2_indexcache
+app01.__init__|1527235712079335000|C:\Users\hantao\workspace\cmdb\app01\__init__.py
+app01.migrations.__init__|1527235712091336000|C:\Users\hantao\workspace\cmdb\app01\migrations\__init__.py
+app01.models|1529309957507579000|C:\Users\hantao\workspace\cmdb\app01\models.py
+app01.tests|1527235712061334000|C:\Users\hantao\workspace\cmdb\app01\tests.py
+cmdb.wsgi|1527231053568000000|C:\Users\hantao\workspace\cmdb\cmdb\wsgi.py
+cmdb.urls|1527384156302258000|C:\Users\hantao\workspace\cmdb\cmdb\urls.py
+app01.admin|1527235712014331000|C:\Users\hantao\workspace\cmdb\app01\admin.py
+cmdb.__init__|1527231085466718000|C:\Users\hantao\workspace\cmdb\cmdb\__init__.py
+manage|1527231053537892000|C:\Users\hantao\workspace\cmdb\manage.py
+app01.migrations.0001_initial|1527385552517117000|C:\Users\hantao\workspace\cmdb\app01\migrations\0001_initial.py
+app01.views|1529403823300380000|C:\Users\hantao\workspace\cmdb\app01\views.py
+app01.migrations.0002_grouptask|1529305545441224000|C:\Users\hantao\workspace\cmdb\app01\migrations\0002_grouptask.py
+app01.migrations.0003_host|1529309960209734000|C:\Users\hantao\workspace\cmdb\app01\migrations\0003_host.py
+app01.apps|1527235712027332000|C:\Users\hantao\workspace\cmdb\app01\apps.py
+cmdb.settings|1529297596112548000|C:\Users\hantao\workspace\cmdb\cmdb\settings.py
+app01.urls|1529402287780554000|C:\Users\hantao\workspace\cmdb\app01\urls.py
+-- END DISKCACHE
+-- START DICTIONARY
+24
+6=app01.models
+3=cmdb.wsgi
+11=Migration
+17=UserSerializer
+19=GrouptaskSerializer
+13=TestSerializer.Meta
+10=cmdb.urls
+16=Host
+12=UserSerializer.Meta
+22=UserViewSet
+1=app01.views
+9=app01.migrations.0001_initial
+8=app01.migrations.0002_grouptask
+24=GrouptaskViewSet
+7=app01.migrations.0003_host
+20=App01Config
+21=Test
+18=TestSerializer
+4=app01.apps
+2=cmdb.settings
+14=GrouptaskSerializer.Meta
+23=TestViewSet
+5=app01.urls
+15=Grouptask
+-- END DICTIONARY
+-- START TREE 1
+24
+add|2|addHost!10@addGroup!10@
+all|1|ALLOWED_HOSTS!19@
+app|2|application!27@App01Config!33@
+aut|1|AUTH_PASSWORD_VALIDATORS!19@
+bas|1|BASE_DIR!19@
+dat|1|DATABASES!19@
+deb|1|DEBUG!19@
+gro|3|GrouptaskViewSet!41@GrouptaskSerializer!41@Grouptask!49@
+hos|1|Host!49@
+ind|1|index!10@
+ins|1|INSTALLED_APPS!19@
+lan|1|LANGUAGE_CODE!19@
+mid|1|MIDDLEWARE!19@
+mig|3|Migration!57@Migration!65@Migration!73@
+roo|1|ROOT_URLCONF!19@
+rou|1|router!43@
+sec|1|SECRET_KEY!19@
+sta|2|STATICFILES_DIRS!19@STATIC_URL!19@
+tem|1|TEMPLATES!19@
+tes|3|TestViewSet!41@Test!49@TestSerializer!41@
+tim|1|TIME_ZONE!19@
+url|2|urlpatterns!83@urlpatterns!43@
+use|5|USE_L10N!19@UserSerializer!41@UserViewSet!41@USE_I18N!19@USE_TZ!19@
+wsg|1|WSGI_APPLICATION!19@
+-- END TREE
+-- START TREE 2
+14
+dep|3|dependencies!11&75@dependencies!11&67@dependencies!11&59@
+fie|3|fields!12&43@fields!13&43@fields!14&43@
+gro|2|groupbase!15&51@groupname!15&51@
+hos|2|host_group!16&51@HostName!16&51@
+ini|1|initial!11&75@
+met|3|Meta!17&41@Meta!18&41@Meta!19&41@
+mod|3|model!12&43@model!13&43@model!14&43@
+nam|1|name!20&35@
+ope|3|operations!11&67@operations!11&59@operations!11&75@
+pas|1|Password!21&51@
+que|3|queryset!22&43@queryset!23&43@queryset!24&43@
+rol|1|Role!16&51@
+ser|3|serializer_class!22&43@serializer_class!23&43@serializer_class!24&43@
+use|1|UserName!21&51@
+-- END TREE

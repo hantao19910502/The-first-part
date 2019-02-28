@@ -1,0 +1,18 @@
+{% extends 'app01/index.html' %}
+{% block addgroup %}
+     <h3>ADD HOST</h3>
+     <form action="/app01/addhost/" method='POST'>
+	     <textarea  name="hostname" placeholder="hostname"></textarea>
+	     <p><textarea  name="role" placeholder="role"></textarea></p>
+	     <p>
+		    <select name='hostgroup'>
+		    	<option>-------------</option>
+				{% for item in hostgroup %}
+					 <option value="{{ item.groupbase }}">{{ item.groupname }}</option>
+					
+				{% endfor %}
+			</select>
+	     </p>
+	     <p><input type='submit' value="add"></p>
+     </form>
+{% endblock %}

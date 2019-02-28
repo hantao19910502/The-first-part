@@ -1,0 +1,84 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\hantao\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\day06\com.python.pydev.analysis\v2_indexcache
+thead_demo.线程交互|1475739335194744000|C:\Users\hantao\workspace\day06\thead_demo\线程交互.py
+thead_demo.thead_Lock|1475726079510811000|C:\Users\hantao\workspace\day06\thead_demo\thead_Lock.py
+ftp.server|1470655185921282000|C:\Users\hantao\workspace\day06\ftp\server.py
+thead_demo.生产者消费者模型2|1475715841275203000|C:\Users\hantao\workspace\day06\thead_demo\生产者消费者模型2.py
+thead_demo.生产者消费者模型|1475571291806450000|C:\Users\hantao\workspace\day06\thead_demo\生产者消费者模型.py
+thead_demo.Mythead|1475565678777403000|C:\Users\hantao\workspace\day06\thead_demo\Mythead.py
+thead_demo.__init__|1471175315356814000|C:\Users\hantao\workspace\day06\thead_demo\__init__.py
+ftp.client|1476164738295705000|C:\Users\hantao\workspace\day06\ftp\client.py
+paramiko.ssh_keygen|1476151687800573000|C:\Users\hantao\workspace\day06\paramiko\ssh_keygen.py
+paramiko.ssh_passwd|1475589036412384000|C:\Users\hantao\workspace\day06\paramiko\ssh_passwd.py
+thead_demo.index|1471178944738834000|C:\Users\hantao\workspace\day06\thead_demo\index.py
+paramiko.__init__|1475588862126415000|C:\Users\hantao\workspace\day06\paramiko\__init__.py
+ftp.__init__|1470532812251791000|C:\Users\hantao\workspace\day06\ftp\__init__.py
+thead_demo.线程交互isSet|1475739466153947000|C:\Users\hantao\workspace\day06\thead_demo\线程交互isSet.py
+-- END DISKCACHE
+-- START DICTIONARY
+17
+4=thead_demo.线程交互
+8=thead_demo.thead_Lock
+9=ftp.server
+1=thead_demo.生产者消费者模型2
+2=thead_demo.生产者消费者模型
+3=thead_demo.Mythead
+12=Procuder
+6=ftp.client
+7=thead_demo.index
+10=paramiko.ssh_keygen
+11=paramiko.ssh_passwd
+14=Procuder.__init__
+13=Consuner
+17=Mythread
+15=Consuner.__init__
+16=MyServer
+5=thead_demo.线程交互isSet
+-- END DICTIONARY
+-- START TREE 1
+35
+C1|1|C1!11@
+C2|1|C2!11@
+P1|1|P1!11@
+P2|1|P2!11@
+bao|3|baoguo3!19@baoguo2!19@baogou1!19@
+bar|1|Bar!26@
+c|2|c!35@c!43@
+con|5|Consumer!42@container!51@Consumer!34@Consumer!10@Consuner!17@
+dat|1|data!51@
+eve|2|event!35@event!43@
+f|1|f!51@
+fil|2|file_size!51@file_name!51@
+fla|1|Flag!51@
+foo|1|Foo!58@
+fun|1|Func!66@
+gl_|2|gl_num!67@gl_num1!67@
+inp|1|input!51@
+ins|1|instance!75@
+ip_|1|ip_port!51@
+key|1|key!83@
+mys|1|MyServer!73@
+myt|1|Mythread!25@
+nam|1|name!19@
+p|2|p!43@p!35@
+pri|1|private_key_path!83@
+pro|4|Proudcer!10@Proudcer!34@Proudcer!42@Procuder!17@
+q|1|q!11@
+que|1|que!19@
+sam|1|samp!67@
+sen|1|send_size!51@
+sk|1|sk!51@
+ssh|2|ssh!83@ssh!91@
+t|1|t!67@
+t1|2|t1!59@t1!27@
+tem|1|temp!19@
+-- END TREE
+-- START TREE 2
+5
+__i|2|__init__!12&18@__init__!13&18@
+__n|2|__Name!14&19@__Name!15&19@
+__q|2|__Queue!14&19@__Queue!15&19@
+han|1|handle!16&74@
+run|3|run!12&18@run!13&18@run!17&26@
+-- END TREE

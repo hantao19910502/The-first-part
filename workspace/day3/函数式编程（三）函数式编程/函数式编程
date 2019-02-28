@@ -1,0 +1,5 @@
+def Fun(arg,*agrs,**kargs):   参数
+	print arg				     默认参数	
+	print args				     
+	print kargs			               可变参数
+	return 'sucess'           返回值

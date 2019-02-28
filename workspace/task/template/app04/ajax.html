@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input id='name' type='text' />
+	<input type='button' value='点击执行ajax'/> 
+	
+	<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+	
+
+	<script type='text/javascript'>
+		function DoAjax(){
+			var temp = $('#name').val();
+			$.ajax({
+				url:'/app04/ajax',
+				type:'POST',
+				data:{dat:temp},
+				success:function(arg){
+					console.log('success');
+				}
+				error:function(){
+					console.log('false')
+				}
+			})
+		}
+	</script>
+
+
+</body>
+</html>

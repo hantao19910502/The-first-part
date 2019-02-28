@@ -1,0 +1,198 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>jquery网站后台管理系统导航 - 站长素材</title>
+    <style>
+		body
+			{
+				font-size:.85em;
+				font-family:"Trebuchet MS",Verdana,Helvetica
+			}
+		#Pageing A{background-color:#008844;
+				border:1px solid White;
+				text-decoration:none;color:White;
+				padding:.1em .6m .2em .6em;}
+		#Pageing A.selected{ background-color:#AA7700;}
+	</style>
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+                $(".div2").click(function(){
+                    $(this).next("div").slideToggle("slow")
+                    .siblings(".div3:visible").slideUp("slow");
+                });
+            });
+        function setTab(m,n){
+                     var tli=document.getElementById("leftmenu"+m).getElementsByTagName("li");
+                     console.log(tli)
+                     var mli=document.getElementById("mcont"+m).getElementsByTagName("ul");
+                     console.log(mli)
+                     for(i=0;i<tli.length;i++) {
+                         console.log(tli[i].className)
+
+                         if(i == n ){
+                             mli[i].style.display="";
+                             continue;
+                         }
+                         mli[i].style.display="none";
+                     }
+                }
+        function Foo() {
+            var tag = "<a href='http://jd.com'>点击</a>"
+        }
+
+</script>
+<style>
+        body{ margin:0;font-family:微软雅黑;}
+        .left{ width:200px; height:100%; border-right:1px solid #CCCCCC ;#FFFFFF; color:#000000; font-size:14px; text-align:center;}
+        .div1{text-align:center; width:200px; padding-top:10px;}
+        .div2{height:40px; line-height:40px;cursor: pointer; font-size:13px; position:relative;border-bottom:#ccc 1px dotted;}
+        .jbsz {position: absolute; height: 20px; width: 20px; left: 40px; top: 10px; background:url(/static/images/1.png);}
+        .xwzx {position: absolute; height: 20px; width: 20px; left: 40px; top: 10px; background:url(/static/images/2.png);}
+        .zxcp {position: absolute; height: 20px; width: 20px; left: 40px; top: 10px; background:url(/static/images/4.png);}
+        .lmtj {position: absolute; height: 20px; width: 20px; left: 40px; top: 10px; background:url(/static/images/8.png);}
+        .lmtl {position: absolute; height: 20px; width: 20px; left: 40px; top: 10px;}
+        .div3{display: none;cursor:pointer; font-size:13px;}
+        .div3 ul{margin:0;padding:0;}
+        .div3 li{ height:30px; line-height:30px; list-style:none; border-bottom:#ccc 1px dotted; text-align:center;}
+        .right{position: absolute; right:10px; top:0px;}
+        .aui-header {background: #205081;border-bottom: 1px solid #2e3d54;box-sizing: border-box;color: #fff;padding: 0 10px; }
+        .divcss5 img{width:100px; height:30px}
+        .divcss5 a img{width:50px; height:20px}
+        body {font-size:.85em;font-family:"Trebuchet MS",Verdana,Helvetica  }
+		#Pageing A{background-color:#008844;  border:1px solid White;  text-decoration:none;color:White;  padding:.1em .6m .2em .6em;}
+		#Pageing A.selected{ background-color:#AA7700;}
+        .Paging a {  padding: 2px 6px;  line-height: 20px;  border: 1px solid #ddd;  background: #FFF;  margin: 0px 5px;  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+    <div class="aui-header" >
+        <div  class="divcss5">
+            <img src="/static/images/zabbix_logo_500x131.png">
+            <a class="right">
+                <img src="/static/images/selfavator_small.png">{{username}}
+            </a>
+        </div>
+    </div>
+    <div class="left">
+    <div class="div1">
+        <!--
+    <div class="left_top">
+        <img src="/static/images/bbb_01.jpg">
+        <img src="/static/images/bbb_02.jpg" id="2">
+        <img src="/static/images/bbb_03.jpg">
+        <img src="/static/images/bbb_04.jpg">
+    </div>
+    -->
+      <div class="div2"><div class="jbsz">
+      </div>基本管理</div>
+          <div class="div3" >
+            <ul id="leftmenu0">
+                <li class="hover" onclick="setTab(0,0)"> 添加主机</li>
+                <li onclick="setTab(0,1)"> 拷贝文件</li>
+                <li onclick="setTab(0,2)"> 上传文件</li>
+                <li onclick="setTab(0,3)"><a href="/web/alllist/">上传文件展示</a> </li>
+                <li onclick="setTab(0,4)"> 登入</li>
+            </ul>
+          </div>
+    </div>
+    </div>
+    /*第一个菜单开始*/
+        <div id="mcont0" class="right">
+
+           <!-- <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="180%" color=#987cb9 SIZE=1>-->
+            <div style="height: 100px;"></div>
+            <ul class="block" style="display: none;margin-left:240px;width:700px" >
+                <h3>添加主机</h3>
+            <form  action='/web/test/' method='POST'>
+                <textarea  name="hostname" placeholder="可以添加多个主机"></textarea>
+                <p><textarea name='ip'  placeholder="可以添加多个ip"></textarea></p>
+                <h3>主机组</h3>
+                <select name="groupid">
+                    <option value="77">meishi</option>
+                    <option value="64">SG2</option>
+                    <option value="65">DanJi</option>
+                    <option value="62">dasheng</option>
+                    <option value="49">Japan-SanGuo-IDC</option>
+                    <option value="50">Korea-SanGuo-IDC</option>
+                    <option value="44">Russia-IDC</option>
+                    <option value="65">SanGuo</option>
+                    <option value="54">SJS-HZW-IDC</option>
+                    <option value="22">Taipei-HZW-UC</option>
+                    <option value="39">Thailand-HZW</option>
+                    <option value="40">Thailand-HZW-IOS</option>
+                    <option value="43">TW-IDC</option>
+                    <option value="45">TW-SangGuo-IDC</option>
+                    <option value="41">Vietnamese-hzw</option>
+                    <option value="42">Vietnamese-soha</option>
+                    <option value="59">web</option>
+                    <option value="63">YUNWEI</option>
+                    <option value="56">HZKP</option>
+                    <option value="66">DaiLi</option>
+                    <option value="69">hadoop</option>
+                    <option value="55">buluo</option>
+                    <option value="74">Warship</option>
+                    <option value="77">meishi</option>
+                </select>
+                <h3>主机模版</h3>
+                <select name="templateid">
+                    <option value="10107">general-module</option>
+                    <option value="10106">battle-module</option>
+                    <option value="10127">haiwai-general-module</option>
+                    <option value="10108">logic-module</option>
+                    <option value="10109">main-module</option>
+                    <option value="10110">mdb-module</option>
+                    <option value="11082">memcached-model</option>
+                    <option value="11098">Nginx-model</option>
+                    <option value="11257">php-model</option>
+                    <option value="10111">sdb-module</option>
+                    <option value="11255">sdb-module_web</option>
+                    <option value="11365">Template-3750-x64</option>
+                </select>
+                <p><input type='submit' value="添加"></p>
+            </form>
+            </ul>
+
+            <ul class="block" style="display: none;width:700px">
+                <h3>拷贝文件</h3>
+                <form action='/web/scp/' method='POST'>
+                        <p><input name='ip'  placeholder="ip"></p>
+                        <a><input name='filename' placeholder="filename"/></a>
+                        <p><input type='submit' value="添加"></p>
+                </form>
+            </ul>
+
+            <ul class="block" style="display: none;width:700px">
+                <form enctype="multipart/form-data" method="POST" action='/web/updata/'>
+                    {% csrf_token %}
+                    <input type="file"  name="your_file"/>
+                    <input type="submit" value="上传文件" />
+                </form>
+            </ul>
+
+            <ul class="block"  style="display: none;width:700px" >
+                <h1>上传文件列表</h1>
+                <table id="alllist_table" border='1'>
+
+                </table>
+                <div class="Paging" id='Pageing'>
+                        {{page}}
+                </div>
+            </ul>
+
+            <ul class="block" style="display: none;width:700px">
+                <h3>登入</h3>
+                <form action='/web/zabbix/' method='POST'>
+                    <p><input name='username'  placeholder="username"></p>
+                    <a><input name='password' placeholder="password"/></a>
+                    <p><input type='submit' value="添加"></p>
+                </form>
+            </ul>
+        </div>
+        /*第一个菜单结束*/
+        <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+            <p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. </p>
+            <p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+        </div>
+</body>
+</html>

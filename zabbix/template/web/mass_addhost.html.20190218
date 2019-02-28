@@ -1,0 +1,143 @@
+{% extends 'web/ziban.html' %}
+{% block mass_addhost %}
+     
+<style type="text/css">
+.loading{
+	width:160px;
+	height:56px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	line-height:56px;
+	color:#fff;
+	padding-left:60px;
+	font-size:15px;
+	background: #000 url(images/loader.gif) no-repeat 10px 50%;
+	opacity: 0.7;
+	z-index:9999;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+</style>
+
+    <legend><h3>线上添加主机</h3></legend>
+	<ul class="nav nav-tabs nav-justified">
+             <li role="presentation" class="active"><a href='/web/mass_addhost/'>线上</a></li>
+             <li role="presentation" ><a href='/web01/mass_addhost/'>线下</a></li>
+          </ul>
+        <br/>
+        <form  action='/web/test/' method='POST'>
+            <textarea  name="hostname" placeholder="可以添加多个主机"></textarea>
+            <p><textarea name='ip'  placeholder="可以添加多个ip"></textarea></p>
+            <h3>主机组</h3>
+            <select name="groupid">
+                <option value="">---------</option>
+                <option value="77">meishi</option>
+                <option value="64">SG2</option>
+                <option value="65">DanJi</option>
+                <option value="62">dasheng</option>
+                <option value="49">Japan-SanGuo-IDC</option>
+                <option value="50">Korea-SanGuo-IDC</option>
+                <option value="44">Russia-IDC</option>
+                <option value="65">SanGuo</option>
+                <option value="54">SJS-HZW-IDC</option>
+                <option value="22">Taipei-HZW-UC</option>
+                <option value="39">Thailand-HZW</option>
+                <option value="40">Thailand-HZW-IOS</option>
+                <option value="43">TW-IDC</option>
+                <option value="45">TW-SangGuo-IDC</option>
+                <option value="41">Vietnamese-hzw</option>
+                <option value="42">Vietnamese-soha</option>
+                <option value="59">web</option>
+                <option value="63">YUNWEI</option>
+                <option value="56">HZKP</option>
+                <option value="66">DaiLi</option>
+                <option value="69">hadoop</option>
+                <option value="55">buluo</option>
+                <option value="74">Warship</option>
+                <option value="77">meishi</option>
+                <option value="78">SG2-KOR-IDC</option>
+                <option value="79">SG2-VN-IDC</option>
+                <option value="81">TAIWAN_SG2</option>
+                <option value="80">FKDWC</option>
+                <option value="73">TW_BDX</option>
+                <option value="82">SG2-TH-IDC</option>
+                <option value="84">walle</option>
+                <option value="85">SG2-JP-IDC</option>
+                <option value="87">HK-FKDWC-IDC</option>
+                <option value="70">DAOMU</option>
+                <option value="97">ft</option>
+                <option value="99">Aliyun-shipgirl</option>
+
+            </select>
+            <h3>主机模版</h3>
+            <table border='0'>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="10107" />general-module </label></td>
+                <td><label><input name="templateid" type="checkbox" value="10106" />battle-module </label></td>
+            </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="10127" />haiwai-general-module </label></td>
+                <td><label><input name="templateid" type="checkbox" value="10108" />logic-module </label></td>
+            </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="10109" />main-module </label></td>
+                <td><label><input name="templateid" type="checkbox" value="10110" />mdb-module </label></td>
+             </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="11082" />memcached-model </label></td>
+                <td><label><input name="templateid" type="checkbox" value="11098" />Nginx-model </label></td>
+            </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="10111" />sdb-module </label></td>
+                <td><label><input name="templateid" type="checkbox" value="11255" />sdb-module_web </label></td>
+            </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="11365" />Template-3750-x64 </label></td>
+                <td><label><input name="templateid" type="checkbox" value="11257" />php-model </label></td>
+             </tr>
+             <tr>
+                <td><label><input name="templateid" type="checkbox" value="12203" />logic-mysql-module </label></td>
+                 <td><label><input name="templateid" type="checkbox" value="12279" />walle_check </label></td>
+             </tr>
+             <tr>
+                <td><label><input name="templateid" type="checkbox" value="11698" />logicserver</label></td>
+                 <td><label><input name="templateid" type="checkbox" value="11699" />gateserver-model </label></td>
+             </tr>
+
+
+                </table>
+	<h3>代理</h3>
+	<select name="proxyid">
+            <option value="">--------</option>
+            <option value="11659">daomu</option>
+            <option value="12117">fkdwc</option>
+            <option value="12309">hk-fkdwc</option>
+            <option value="10567">jxq</option>
+            <option value="10366">yz</option>
+            <option value="12533">Aliyun-shipgirl</option>
+        </select>
+	{% ifequal status  "主机信息不完整"%}
+            <p><input type='submit' value="添加"></p><span style='color:red'>{{status}}</span>
+        {%  else %}
+            <p><input type='submit' value="添加"></p><span style='color:green'>{{status}}</span>
+        {%  endifequal %}
+	<div>
+		<img alt="" src="images/1.gif;" />
+	</div>
+
+	<script type="text/javascript">
+        function  HtmlLoad(url){
+            $('#myModal').modal('show');
+
+        setTimeout(function () {
+       $('#myModal').modal('hide');
+    }, 3000);
+
+        }
+</script>	
+
+    </script>	
+{% endblock %}

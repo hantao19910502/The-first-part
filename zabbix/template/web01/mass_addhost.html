@@ -1,0 +1,44 @@
+{% extends 'web01/ziban.html' %}
+{% block mass_addhost %}
+    <h3>线下添加主机</h3>
+    <ul class="nav nav-tabs nav-justified">
+             <li role="presentation" class="active"><a href='/web/mass_addhost/'>线上</a></li>
+             <li role="presentation" ><a href='/web01/mass_addhost/'>线下</a></li>
+          </ul>
+    <br/>
+        <form  action='/web01/test/' method='POST'>
+            <textarea  name="hostname" placeholder="可以添加多个主机"></textarea>
+            <p><textarea name='ip'  placeholder="可以添加多个ip"></textarea></p>
+            <h3>主机组</h3>
+            <select name="groupid">
+
+                <option value="2">Linux servers</option>
+                <option value="15">Alarm_message</option>
+                <option value="17">ap</option>
+                <option value="12">BabelTime</option>
+                <option value="14">ICMP</option>
+                <option value="4">Zabbix servers</option>
+                <option value="20">宿主机</option>
+                <option value="21">虚拟机</option>
+
+            </select>
+            <h3>主机模版</h3>
+            <table border='0'>
+            <tr>
+                <td>
+                    <label><input name="templateid" type="checkbox" value="10001" />Template OS Linux </label>
+                    <label><input name="templateid" type="checkbox" value="10164" />general-module </label>
+                </td>
+                
+            </tr>
+
+
+                </table>
+        {% ifequal status  "主机信息不完整"%}
+            <p><input type='submit' value="添加"></p><span style='color:red'>{{status}}</span>
+        {%  else %}
+            <p><input type='submit' value="添加"></p><span style='color:green'>{{status}}</span>
+        {%  endifequal %}
+
+
+{% endblock %}

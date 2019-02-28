@@ -1,0 +1,108 @@
+{% extends 'web01/ziban.html' %}
+{% block tree %}
+	<h2>Basic Tree</h2>
+	<p>Click the arrow on the left to expand or collapse nodes.</p>
+	<div style="margin:20px 0;"></div>
+	<div class="easyui-panel" style="padding:5px">
+		<ul class="easyui-tree">
+			<li>
+				<span>My Documents</span>
+				<ul>
+					<li data-options="state:'closed'">
+
+						<span>Program Files</span>
+
+						<ul>
+                            /*===============================================*/
+
+
+{#							 <div class="table-responsive">#}
+{#                                <table class="table table-striped">#}
+{#                                  <tbody>#}
+
+                                    {% for item in all_list %}
+                                        <li>
+                                        <tr>
+                                            <td ><a  onclick="zhankai()">{{item.host}}</a></td>
+
+
+                                        </tr>
+                                        </li>
+                                    {% endfor %}
+{#                                  </tbody>#}
+{#                                </table>#}
+{##}
+{#                            </div>#}
+
+
+</table>
+                             /*===============================================*/
+						</ul>
+
+					</li>
+
+				</ul>
+			</li>
+		</ul>
+	</div>
+     <div class="table-responsive" hidden="hidden" id="table-responsive">
+            <table class="table table-striped"　>
+              <thead>
+                <tr>
+                  <th>host</th>
+                  <th>ip</th>
+                  <th>hostid</th>
+                  <th>proxy_hostid</th>
+                  <th>status</th>
+                  <th>delete</th>
+
+                </tr>
+              </thead>
+              <tbody>
+{#                {% for item in all_list %}#}
+                    <tr>
+                        <td>{{item.host}}</td>
+                        <td>{{item.interfaces}}</td>
+                        <td>{{item.hostid}}</td>
+                        <td>{{item.proxy_hostid}}</td>
+                        {%  ifequal item.status '1'  %}
+                            <td>禁止</td>
+
+                        {%  else  %}
+                            {%  ifequal item.available '2'  %}
+                                <td>宕机</td>
+                            {%  else  %}
+                                <td>非监控</td>
+                            {% endifequal %}
+                        {% endifequal %}
+                        <td>
+                                <a href="#"  onclick='Favor(this,"{{item.interfaces}}");'>删除</a>
+
+                        </td>
+
+{#                        <td>#}
+{#                            <form action='/web/deleteone/' method='POST'>#}
+{#						        <a><input name='ip'  value='{{item.interfaces}}' type="checkbox" checked="0" placeholder="delete"></a>#}
+{#						        <a><input type='submit' value='删除'/></a>#}
+{#					        </form>#}
+{#                        </td>#}
+                    </tr>
+{#                {% endfor %}#}
+              </tbody>
+            </table>
+          <div class="Paging" id='Pageing'>
+              <nav aria-label="..."><ul class="pager"><li>{{page}}</li></ul></nav>
+	</div>
+          </div>
+
+<script src="http://cdn.bootcss.com/Chart.js/2.1.6/Chart.bundle.js"></script>
+<script type="text/javascript">
+    function zhankai() {
+        var value = document.getElementById("table-responsive");
+        console.log(value.hidden)
+        value.hidden = false
+        console.log(value.hidden)
+    }
+
+</script>
+{% endblock %}

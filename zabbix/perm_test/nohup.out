@@ -1,0 +1,37 @@
+[14/Jul/2017 09:55:47] "GET /admin/ HTTP/1.1" 200 1865
+[14/Jul/2017 09:56:05] "POST /admin/ HTTP/1.1" 200 2025
+[14/Jul/2017 09:56:10] "POST /admin/ HTTP/1.1" 302 0
+[14/Jul/2017 09:56:10] "GET /admin/ HTTP/1.1" 200 2718
+[14/Jul/2017 09:56:30] "GET / HTTP/1.1" 200 1757
+[14/Jul/2017 09:57:26] "GET /admin/ HTTP/1.1" 200 2718
+[14/Jul/2017 11:10:45] "GET /admin/ HTTP/1.1" 200 1865
+[14/Jul/2017 11:11:00] "POST /admin/ HTTP/1.1" 302 0
+[14/Jul/2017 11:11:00] "GET /admin/ HTTP/1.1" 200 2718
+[14/Jul/2017 11:11:02] "GET /admin/auth/group/ HTTP/1.1" 200 3256
+[14/Jul/2017 11:11:02] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[14/Jul/2017 11:11:13] "GET /admin/auth/ HTTP/1.1" 200 2539
+[14/Jul/2017 11:11:14] "GET /admin/auth/user/ HTTP/1.1" 200 6470
+[14/Jul/2017 11:11:14] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[14/Jul/2017 11:11:16] "GET /admin/auth/user/2/ HTTP/1.1" 200 12998
+[14/Jul/2017 11:11:16] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[17/Jul/2017 07:00:44] "GET /admin/ HTTP/1.1" 200 1865
+[17/Jul/2017 07:00:50] "POST /admin/ HTTP/1.1" 302 0
+[17/Jul/2017 07:00:50] "GET /admin/ HTTP/1.1" 200 2718
+Validating models...
+
+0 errors found
+July 14, 2017 - 11:09:03
+Django version 1.6.8, using settings 'perm_test.settings'
+Starting development server at http://192.168.1.140:9000/
+Quit the server with CONTROL-C.
+Traceback (most recent call last):
+  File "manage.py", line 8, in <module>
+    from django.core.management import execute_from_command_line
+  File "/usr/lib64/python2.6/site-packages/django/__init__.py", line 3, in <module>
+    from django.utils.version import get_version
+  File "/usr/lib64/python2.6/site-packages/django/utils/version.py", line 7, in <module>
+    from django.utils.lru_cache import lru_cache
+  File "/usr/lib64/python2.6/site-packages/django/utils/lru_cache.py", line 28
+    fasttypes = {int, str, frozenset, type(None)},
+                    ^
+SyntaxError: invalid syntax

@@ -1,0 +1,163 @@
+{% extends 'web/ziban.html' %}
+{% block zhanshi %}
+
+
+          <h1 class="page-header">Dashboard</h1>
+
+          <div class="row placeholders">
+{#            <div class="col-xs-6 col-sm-3 placeholder">#}
+{#              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">#}
+{#              <h4>Label</h4>#}
+{#              <span class="text-muted">Something else</span>#}
+{#            </div>#}
+              <div class="col-xs-6 col-sm-3 placeholder" style="width: 500px;">
+                    <canvas id="myChart" style="width:500px;height:500px;"   ></canvas>
+              </div>
+
+
+          </div>
+
+          <!--<h2 class="sub-header">Section title</h2>-->
+	  <ul class="nav nav-tabs nav-justified">
+	     <li role="presentation" class="active"><a href='/web01/zhanshi/available/2'>宕机状态</a></li>
+	     <li role="presentation" ><a href='/web01/zhanshi/status/1'>禁止状态</a></li>
+	     <li role="presentation" ><a href='/web01/zhanshi/available/0'>非监控状态</a></li>
+	  </ul>
+          <br/>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>host</th>
+                  <th>ip</th>
+                  <th>hostid</th>
+                  <th>proxy_hostid</th>
+                  <th>status</th>
+
+
+                </tr>
+              </thead>
+              <tbody>
+                {% for item in all_list %}
+                    <tr>
+                        <td>{{item.host}}</td>
+                        <td>{{item.interfaces}}</td>
+                        <td>{{item.hostid}}</td>
+                        <td>{{item.proxy_hostid}}</td>
+                        {%  ifequal item.status '1'  %}
+                            <td>
+                                <div class="btn-group" >
+                                      <a class="btn btn-primary" href="#"><i class="icon-user icon-white"><span class="label label-info">禁止</span></i></a>
+                                      <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="/web/edit/{{ item.interfaces}}/{{item.hostid}}"><i class="icon-pencil"></i> Edit</a></li>
+                                        <li><a href="#"  onclick='Favor(this,"{{item.interfaces}}");'><i class="icon-trash"></i> Delete</a></li>
+                                        <li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="i"></i> Make admin</a></li>
+                                      </ul>
+                                    </div>
+                            </td>
+
+                        {%  else  %}
+                            {%  ifequal item.available '2'  %}
+                                <td>
+                                    <div class="btn-group" >
+                                      <a class="btn btn-primary" href="#"><i class="icon-user icon-white"><span class="label label-danger">宕机</span></i></a>
+                                      <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
+                                        <li><a href="#"  onclick='Favor(this,"{{item.interfaces}}");'><i class="icon-trash"></i> Delete</a></li>
+                                        <li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="i"></i> Make admin</a></li>
+                                      </ul>
+                                    </div>
+                                </td>
+                            {%  else  %}
+{#                                <td >非监控</td>#}
+                                <td >
+                                    <div class="btn-group">
+                                      <a class="btn btn-primary" href="#"><i class="icon-user icon-white"><span class="label label-warning">非监控</span></i></a>
+                                      <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
+                                        <li><a href="#"  onclick='Favor(this,"{{item.interfaces}}");'><i class="icon-trash"></i> Delete</a></li>
+                                        <li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="i"></i> Make admin</a></li>
+                                      </ul>
+                                    </div>
+                                </td>
+                            {% endifequal %}
+                        {% endifequal %}
+
+{#                        <td>#}
+{#                            <form action='/web/deleteone/' method='POST'>#}
+{#						        <a><input name='ip'  value='{{item.interfaces}}' type="checkbox" checked="0" placeholder="delete"></a>#}
+{#						        <a><input type='submit' value='删除'/></a>#}
+{#					        </form>#}
+{#                        </td>#}
+                    </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          <div class="Paging" id='Pageing'>
+              <nav aria-label="..."><ul class="pager"><li>{{page}}</li></ul></nav>
+	</div>
+          </div>
+     <script src="http://cdn.bootcss.com/Chart.js/2.1.6/Chart.bundle.js"></script>
+
+     <script type="text/javascript">
+
+ // 设置参数
+ var data = {
+    labels: [
+        "禁止",
+        "宕机",
+        "非监控"
+    ],
+    datasets: [
+        {
+            data: [{{ status_html.1 }}, {{ status_html.2 }}, {{ status_html.0 }}],
+{#            data: [2, 3, 4],#}
+            backgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ],
+            hoverBackgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ]
+        }]
+};
+
+
+    // Get the context of the canvas element we want to select
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var myBarChart = new Chart(ctx, {
+{#                                            type: 'pie',#}
+                                            type: 'doughnut',
+                                            data: data,
+                                            // options: options
+                                    });
+
+     function Favor(doc,ip) {
+         //删除机器
+         if (confirm('确认删除吗?')) {
+             $.ajax({
+                 url: '/web01/deleteone/',
+                 data: {nip: ip},
+                 type: 'POST',
+                 success: function () {
+                     console.log('123');
+                     {#                    $(doc).text('不删除')#}
+                 }
+             });
+         }
+     }
+</script>
+
+{% endblock %}

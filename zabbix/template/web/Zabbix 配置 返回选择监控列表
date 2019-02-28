@@ -1,0 +1,28 @@
+Zabbix 配置 返回选择监控列表
+1创建应用 KEY
+名称：  
+linuxprobe
+ 
+应用 Key： 61dbe9f6-cbfd-9487-ecb8-932593364022
+自动关闭时间：  
+30分钟
+ 
+2安装 Agent
+1.切换到zabbix脚本目录(如何查看zabbix脚本目录)：
+
+cd /usr/local/zabbix-server/share/zabbix/alertscripts
+2.获取OneITSM agent包：
+
+wget http://www.onealert.com/agent/release/oneitsm_zabbix_release-1.2.0.tar.gz
+3.解压、安装。
+
+tar -zxf oneitsm_zabbix_release-1.2.0.tar.gz
+cd oneitsm/bin
+bash install.sh 61dbe9f6-cbfd-9487-ecb8-932593364022
+注：1、在安装过程中根据安装提示，输入zabbix管理地址、管理员用户名、密码。
+
+2、zabbix管理地址正确示例:http://zabbix.server.com/zabbix
+4.当提示"安装成功"时表示安装成功!
+
+验证告警集成
+产生新的zabbix告警(problem),动作状态为“已送达”表示集成成功。

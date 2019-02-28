@@ -1,0 +1,46 @@
+{% extends 'web01/ziban.html' %}
+{% block liuliang %}
+
+
+{#     <div style="width: 500px;">#}
+      <canvas id="myChart" style="width:40px; height:80px;"></canvas>
+{#	</div>#}
+
+    <script src="http://cdn.bootcss.com/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <script type="text/javascript">
+
+
+		var ctx = document.getElementById("myChart").getContext("2d");
+		var myChart  = new Chart(ctx,
+		{
+{#            labels : ["January","February","March","April","May","June","July","123"],#}
+			type: 'line',
+			data : {
+{#							labels : [{{ list }}],#}
+                            labels : ["January","February","March","April","May","June","July","123"],
+							datasets : [
+								{
+                                    labels :"hantao",
+									fillColor : "rgba(220,220,220,0.5)",
+									strokeColor : "rgba(220,220,220,1)",
+									pointColor : "rgba(220,220,220,1)",
+									pointStrokeColor : "#fff",
+									data : [{{ all_list.1 }},{{ all_list.3 }},{{ all_list.5 }}]
+								},
+
+							]
+				    },
+			// options: {
+	  //       scales: {
+	  //           yAxes: [{
+	  //               ticks: {
+	  //                   beginAtZero:true
+	  //               }
+	  //           }]
+	  //       }
+   //  		}
+
+    });
+    </script>
+
+{% endblock %}

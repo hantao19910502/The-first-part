@@ -1,0 +1,21 @@
+{% extends 'web/ziban.html' %}
+{% block deletehosts %}
+
+    <legend><h3>线上删除主机</h3></legend>
+	<ul class="nav nav-tabs nav-justified">
+             <li role="presentation" class="active"><a href='/web/deletehost/'>线上</a></li>
+             <li role="presentation" ><a href='/web01/deletehost/'>线下</a></li>
+          </ul>
+        <br/>
+
+
+    <form action="/web/deletehost/" method='POST'>
+        <textarea name='ip'  placeholder="指定删除主机IP"></textarea>
+        <br>
+        <input type="submit" value="提交">
+        {% ifequal status  "主机已删除"%}
+            <span style='color:green'>{{status}}</span>
+        {%  else %}
+            <span style='color:red'>{{status}}</span>
+        {%  endifequal %}{% endblock %}
+    </form>

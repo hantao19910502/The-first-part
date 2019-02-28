@@ -1,0 +1,66 @@
+{% extends 'web/ziban.html' %}
+{% block zhanshi %}
+
+
+{#          <h1 class="page-header">Dashboard</h1>#}
+{##}
+{#          <div class="row placeholders">#}
+{##}
+{#              <div class="col-xs-6 col-sm-3 placeholder" style="width: 500px;">#}
+{#                    <canvas id="myChart" style="width:500px;height:500px;"   ></canvas>#}
+{#              </div>#}
+{##}
+{##}
+{#          </div>#}
+
+          <!--<h2 class="sub-header">Section title</h2>-->
+        <ul class="breadcrumb" id="breadcrumb_1">
+          <li><a href="#">首页</a> <span class="divider">/</span></li>
+          <li><a href="#">{{ status_name }}</a> <span class="divider">/</span></li>
+
+        </ul>
+
+       <ul class="nav nav-tabs nav-justified">
+	     <li role="presentation" class="active"><a href='/web/zabbix_deletelist/1'>创建日志</a></li>
+	     <li role="presentation" ><a href='/web/zabbix_deletelist/2'>删除日志</a></li>
+	     <li role="presentation" ><a href='/web/zabbix_deletelist/3'>更改日志</a></li>
+	    </ul>
+          <br/>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>ip</th>
+                  <th>hostname</th>
+                  <th>last_ti</th>
+                  <th>user</th>
+
+
+                </tr>
+              </thead>
+              <tbody>
+              {% for item in all_list %}
+
+                  {%  ifequal TYPE item.status_code  %}
+                    <tr>
+                        <td>{{item.ip}}</td>
+                        <td>{{item.hostname}}</td>
+                        <td>{{item.last_ti|date:"Y-m-d"}}</td>
+                        <td>{{item.user}}</td>
+                    </tr>
+                  {% endifequal %}
+              {% endfor %}
+              </tbody>
+            </table>
+          <div class="Paging" id='Pageing'>
+              <nav aria-label="..."><ul class="pager"><li>{{page}}</li></ul></nav>
+	</div>
+          </div>
+     <script src="http://cdn.bootcss.com/Chart.js/2.1.6/Chart.bundle.js"></script>
+
+     <script type="text/javascript">
+
+
+    </script>
+
+{% endblock %}

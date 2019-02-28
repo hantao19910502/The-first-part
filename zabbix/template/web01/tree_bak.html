@@ -1,0 +1,61 @@
+{% extends 'web01/ziban.html' %}
+{% block tree %}
+	<h2>Basic Tree</h2>
+	<p>Click the arrow on the left to expand or collapse nodes.</p>
+	<div style="margin:20px 0;"></div>
+	<div class="easyui-panel" style="padding:5px">
+		<ul class="easyui-tree">
+			<li>
+				<span>My Documents</span>
+				<ul>
+					<li data-options="state:'closed'">
+
+						<span>Program Files</span>
+
+						<ul>
+                            /*===============================================*/
+
+
+{#							 <div class="table-responsive">#}
+{#                                <table class="table table-striped">#}
+{#                                  <tbody>#}
+
+                                    {% for item in all_list %}
+                                        <li><a href="http://baidu.com">
+                                        <tr>
+                                            <td>{{item.host}}</td>
+                                            <td>{{item.interfaces}}</td>
+                                            <td>{{item.hostid}}</td>
+                                            <td>{{item.proxy_hostid}}</td>
+                                            {%  ifequal item.status '1'  %}
+                                                <td>禁止</td>
+
+                                            {%  else  %}
+                                                {%  ifequal item.available '2'  %}
+                                                    <td>宕机</td>
+                                                {%  else  %}
+                                                    <td>非监控</td>
+                                                {% endifequal %}
+                                            {% endifequal %}
+
+                                        </tr></a>
+                                        </li>
+                                    {% endfor %}
+{#                                  </tbody>#}
+{#                                </table>#}
+{##}
+{#                            </div>#}
+
+
+</table>
+                             /*===============================================*/
+						</ul>
+
+					</li>
+
+				</ul>
+			</li>
+		</ul>
+	</div>
+<script src="http://cdn.bootcss.com/Chart.js/2.1.6/Chart.bundle.js"></script>
+{% endblock %}

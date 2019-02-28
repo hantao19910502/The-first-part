@@ -1,0 +1,73 @@
+{% extends 'web/index.html' %}
+<style>
+        .login {
+                width:500px;
+                height:300px;
+                border:2px solid #ddd;
+                margin:0 auto;
+        }
+        .logout {
+                width:500px;
+                height:100px;
+                border:2px solid #ddceba;
+                margin:0 auto;
+        }
+</style>
+{% block addhost %}
+        <h3>添加主机</h3>
+        <form action='/web/addhost/' method='POST'>
+                <p><input name='hostname'  placeholder="hostname"></p>
+                <p><input name='ip' placeholder="ip"/></p>
+                <h3>主机组</h3>
+                    <select name="groupid">
+                        <option value="77">meishi</option>
+                        <option value="64">SG2</option>
+                        <option value="65">DanJi</option>
+                        <option value="62">dasheng</option>
+                        <option value="49">Japan-SanGuo-IDC</option>
+                        <option value="50">Korea-SanGuo-IDC</option>
+                        <option value="44">Russia-IDC</option>
+                        <option value="65">SanGuo</option>
+                        <option value="54">SJS-HZW-IDC</option>
+                        <option value="22">Taipei-HZW-UC</option>
+                        <option value="39">Thailand-HZW</option>
+                        <option value="40">Thailand-HZW-IOS</option>
+                        <option value="43">TW-IDC</option>
+                        <option value="45">TW-SangGuo-IDC</option>
+                        <option value="41">Vietnamese-hzw</option>
+                        <option value="42">Vietnamese-soha</option>
+                        <option value="59">web</option>
+                        <option value="63">YUNWEI</option>
+                        <option value="56">HZKP</option>
+                        <option value="66">DaiLi</option>
+                        <option value="69">hadoop</option>
+                        <option value="55">buluo</option>
+                        <option value="74">Warship</option>
+                        <option value="77">meishi</option>
+                        <option value="79">SG2-VN-IDC</option>
+                    </select>
+                    <h3>主机模版</h3>
+                    <select name="templateid">
+                        <option value="10107">general-module</option>
+                        <option value="10106">battle-module</option>
+                        <option value="10127">haiwai-general-module</option>
+                        <option value="10108">logic-module</option>
+                        <option value="10109">main-module</option>
+                        <option value="10110">mdb-module</option>
+                        <option value="11082">memcached-model</option>
+                        <option value="11098">Nginx-model</option>
+                        <option value="11257">php-model</option>
+                        <option value="10111">sdb-module</option>
+                        <option value="11255">sdb-module_web</option>
+                        <option value="11365">Template-3750-x64</option>
+                    </select>
+		    <select name="proxyid">
+			<option value="11659">daomu</option>
+			<option value="12117">fkdwc</option>
+			<option value="12309">hk-fkdwc</option>
+			<option value="10567">jxq</option>
+			<option value="10366">yz</option>
+		    </select>
+                <p><input type='submit' value="添加"></p>                                                                                </form>
+</form>
+{% endblock %}

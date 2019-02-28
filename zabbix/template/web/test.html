@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+        .login {
+                width:500px;
+                height:300px;
+                border:2px solid #ddd;
+                margin:0 auto;
+        }
+        .logout {
+                width:500px;
+                height:100px;
+                border:2px solid #ddd;
+                margin:0 auto;
+        }
+        .top-subnav-container {
+                height: 32px;
+                line-height: 32px;
+                background-color: #0a466a;
+                position: relative;
+                padding: 0 13px;
+        }
+        .account-container {
+					width:1800px;
+					height:1600px;
+					margin-left:auto;
+					margin-right:auto;
+					margin-top:10px;
+			}
+</style>
+</head>
+<body>
+        <div class="top-subnav-container"></div>
+        <div style='width:200px;background-color:#d0d0d0;position:fixed;top:40px;bottom:0px'>
+            <li><a href="http://192.168.1.140:8000/web/updata" rel="stylesheet">首页</a></li>
+        </div>
+        <div>
+            <li class="active">1</li>
+            <li><a href="?page=2">2</a></li>
+            <li><a href="?page=3">3</a></li>
+        </div>
+        <div style="float:right;width:80%">
+        <h3>添加主机</h3>
+        <form  action='/web/test/' method='POST'>
+            <textarea  name="hostname" placeholder="可以添加多个主机"></textarea>
+            <p><textarea name='ip'  placeholder="可以添加多个ip"></textarea></p>
+            <h3>主机组</h3>
+            <select name="groupid">
+                <option value="77">meishi</option>
+                <option value="64">SG2</option>
+                <option value="65">DanJi</option>
+                <option value="62">dasheng</option>
+                <option value="49">Japan-SanGuo-IDC</option>
+                <option value="50">Korea-SanGuo-IDC</option>
+                <option value="44">Russia-IDC</option>
+                <option value="65">SanGuo</option>
+                <option value="54">SJS-HZW-IDC</option>
+                <option value="22">Taipei-HZW-UC</option>
+                <option value="39">Thailand-HZW</option>
+                <option value="40">Thailand-HZW-IOS</option>
+                <option value="43">TW-IDC</option>
+                <option value="45">TW-SangGuo-IDC</option>
+                <option value="41">Vietnamese-hzw</option>
+                <option value="42">Vietnamese-soha</option>
+                <option value="59">web</option>
+                <option value="63">YUNWEI</option>
+                <option value="56">HZKP</option>
+                <option value="66">DaiLi</option>
+                <option value="69">hadoop</option>
+                <option value="55">buluo</option>
+                <option value="74">Warship</option>
+                <option value="77">meishi</option>
+            </select>
+            <h3>主机模版</h3>
+            <table border='0'>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="10107" />general-module </label></td>
+                <td><label><input name="templateid" type="checkbox" value="10106" />battle-module </label></td>
+            </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="10127" />haiwai-general-module </label></td>
+                <td><label><input name="templateid" type="checkbox" value="10108" />logic-module </label></td>
+            </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="10109" />main-module </label></td>
+                <td><label><input name="templateid" type="checkbox" value="10110" />mdb-module </label></td>
+             </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="11082" />memcached-model </label></td>
+                <td><label><input name="templateid" type="checkbox" value="11098" />Nginx-model </label></td>
+            </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="10111" />sdb-module </label></td>
+                <td><label><input name="templateid" type="checkbox" value="11255" />sdb-module_web </label></td>
+            </tr>
+            <tr>
+                <td><label><input name="templateid" type="checkbox" value="11365" />Template-3750-x64 </label></td>
+                <td><label><input name="templateid" type="checkbox" value="11257" />php-model </label></td>
+             </tr>
+                </table>
+            <!--
+            <select name="templateid">
+                <option value="10107">general-module</option>
+                <option value="10106">battle-module</option>
+                <option value="10127">haiwai-general-module</option>
+                <option value="10108">logic-module</option>
+                <option value="10109">main-module</option>
+                <option value="10110">mdb-module</option>
+                <option value="11082">memcached-model</option>
+                <option value="11098">Nginx-model</option>
+                <option value="11257">php-model</option>
+                <option value="10111">sdb-module</option>
+                <option value="11255">sdb-module_web</option>
+                <option value="11365">Template-3750-x64</option>
+            </select>
+            -->
+            <p><input type='submit' value="添加"></p>
+            {% ifequal status  "主机已删除"%}
+                <span style='color:green'>{{status}}</span>
+            {%  endifequal %}
+        </form>
+         <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.1.min.js"></script>
+
+        </div>
+</body>
+</html>

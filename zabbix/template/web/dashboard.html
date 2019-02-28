@@ -1,0 +1,78 @@
+{% extends 'web/ziban.html' %}
+{% block zhanshi %}
+
+          <h1 class="page-header">Dashboard</h1>
+           <ul class="nav nav-tabs nav-justified">
+             <li role="presentation" class="active"><a href='/web/dashboard/'>线上</a></li>
+    {#	     <li role="presentation" ><a href='/web01/dashboard/'>线下</a></li>#}
+             <li role="presentation" ><a href='http://192.168.10.61:3000/dashboard/db/jp-sg2-idc' target="_blank">线下</a></li>
+             <li role="presentation" >
+                 <ul class="nav nav-tabs">
+                      <li class="dropdown">
+                        <a class="dropdown-toggle"
+                           data-toggle="dropdown"
+                           href="#">
+                            Dropdown
+                            <b class="caret"></b>
+                          </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="http://192.168.10.61:3000/dashboard/db/jp-sg2-idc" target="_blank"><i class="icon-pencil"></i>JP-SG2-IDC</a></li>
+                          <li><a href="http://192.168.10.61:3000/dashboard/db/kor-sg2-idc" target="_blank"><i class="icon-pencil"></i>KOR-SG2-IDC</a></li>
+                          <li><a href="http://192.168.10.61:3000/dashboard/db/sg2-taiwan-idc" target="_blank"><i class="icon-pencil"></i>SG2-TAIWAN-IDC</a></li>
+                          <li><a href="http://192.168.10.61:3000/dashboard/db/taiwan_bdx" target="_blank"><i class="icon-pencil"></i>BDX-TAIWAN-IDC</a></li>
+                          <li><a href="http://192.168.10.61:3000/dashboard/db/vn-sd2-idc" target="_blank"><i class="icon-pencil"></i>VN-SG2-IDC</a></li>
+                        </ul>
+                      </li>
+                </ul>
+             </li>
+
+	    </ul>
+          <div class="row placeholders">
+              <div class="col-xs-6 col-sm-3 placeholder" style="width: 500px;">
+                    <canvas id="myChart" style="width:500px;height:500px;"   ></canvas>
+              </div>
+
+
+          </div>
+    <script src="http://cdn.bootcss.com/Chart.js/2.1.6/Chart.bundle.js"></script>
+
+     <script type="text/javascript">
+
+ // 设置参数
+ var data = {
+    labels: [
+        "禁止",
+        "宕机",
+        "非监控"
+    ],
+    datasets: [
+        {
+            data: [{{ status_html.1 }}, {{ status_html.2 }}, {{ status_html.0 }}],
+{#            data: [2, 3, 4],#}
+            backgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ],
+            hoverBackgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ]
+        }]
+};
+
+
+    // Get the context of the canvas element we want to select
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var myBarChart = new Chart(ctx, {
+{#                                            type: 'pie',#}
+                                            type: 'doughnut',
+                                            data: data,
+                                            // options: options
+                                    });
+
+
+</script>
+
+{% endblock %}

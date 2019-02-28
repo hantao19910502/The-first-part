@@ -1,0 +1,24 @@
+{% extends 'web/ziban.html' %}
+{% block update_hostid %}
+    <legend><h3>线上打开/关闭主机监控</h3></legend>
+	<ul class="nav nav-tabs nav-justified">
+             <li role="presentation" class="active"><a href='/web/update_hostid/'>线上</a></li>
+             <li role="presentation" ><a href='/web01/update_hostid/'>线下</a></li>
+          </ul>
+        <br/>
+
+    <form action="/web/update_hostid/" method="POST">
+        <textarea name="ip" placeholder="ip"></textarea>
+        <br/>
+        <input type="radio" name="genber" value="male"/>打开
+        <br>
+        <input type="radio" name="genber" value="female"/>关闭
+        <br/>
+        <input type="submit" value="提交">
+        {% ifequal status  "主机操作已完成"%}
+            <span style='color:green'>{{status}}</span>
+        {%  else %}
+            <span style='color:red'>{{status}}</span>
+        {%  endifequal %}
+    </form>
+{% endblock %}

@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>zabbix 添加acknowledge信息</title>
+        <!-- Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="icon" href="/static/favicon.ico">
+        <style>
+            /*web background*/
+            .container{
+                display:table;
+                height:100%;
+            }
+
+            .row{
+                display: table-cell;
+                vertical-align: middle;
+            }
+            /* centered columns styles */
+            .row-centered {
+                text-align:center;
+            }
+            .col-centered {
+                display:inline-block;
+                float:none;
+                text-align:left;
+                margin-right:-4px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row row-centered">
+                <div class="well col-md-6 col-centered">
+		    <ul class="nav nav-pills">
+                  <li class="active">
+                    <a href="#">首页</a>
+                  </li>
+                  <li><a href="/web/hantao/1">展示所有</a></li>
+                </ul>
+                    <form action="/web/event_acknowledge/{{hostname}}/{{eventids}}/" method="post" role="form">
+                        <div class="input-group input-group-md">
+                            <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-info-sign" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" value="{{hostname}}"/>
+                        </div>
+                        <div class="input-group input-group-md">
+                            <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-screenshot" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="eventids" value="{{eventids}}"/>
+                        </div>
+                        <div class="input-group input-group-md">
+                            <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-pencil"></i></span>
+			    <textarea  name="info" placeholder="添加信息" width="100%" height="100%;"></textarea>
+                        </div>
+                        <br/>
+                        <button type="submit" class="btn btn-success btn-block">提交</button>
+                    </form>
+                   <table class="table table-hover">
+			 <tr>
+		                  <th>user</th>
+				  <th>message</th>
+		                  <th>clock</th>
+				  
+
+                	</tr>
+			 {% for item in  acknowledges %}
+			 <tr>
+			  		<td>{{item.user}}</td>
+			  		<td>{{item.message}}</td>
+			  		<td>{{item.clock}}</td>
+			</tr>
+			{% endfor %}
+		   </table>	
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </body>
+</html>

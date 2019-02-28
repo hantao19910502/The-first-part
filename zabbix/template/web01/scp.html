@@ -1,0 +1,28 @@
+{% extends 'web01/index.html' %}
+<style>
+        .login {
+                width:500px;
+                height:300px;
+                border:2px solid #ddd;
+                margin:0 auto;
+        }
+        .logout {
+                width:500px;
+                height:100px;
+                border:2px solid #ddd;
+                margin:0 auto;
+        }
+</style>
+{% block scp %}
+        <h3>拷贝文件</h3>
+        <form action='/web01/scp/' method='POST'>
+                <p><input name='ip'  placeholder="ip"></p>
+                <a><input name='filename' placeholder="filename"/></a>
+                <p><input type='submit' value="添加"></p>
+        {% ifequal status  "拷贝完成"%}
+            <span style='color:green'>{{status}}</span>
+        {%  else %}
+            <span style='color:red'>{{status}}</span>
+        {%  endifequal %}
+        </form>
+{% endblock %}

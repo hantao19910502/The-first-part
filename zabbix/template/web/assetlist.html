@@ -1,0 +1,40 @@
+{% extends 'web/index.html' %}
+    <style>
+		body
+			{
+				font-size:.85em;
+				font-family:"Trebuchet MS",Verdana,Helvetica
+			}
+		#Pageing A{background-color:#008844;
+				border:1px solid White;
+				text-decoration:none;color:White;
+				padding:.1em .6m .2em .6em;}
+		#Pageing A.selected{ background-color:#AA7700;}
+        .Paging a {
+                padding: 2px 6px;
+                line-height: 20px;
+                border: 1px solid #ddd;
+                background: #FFF;
+                margin: 0px 5px;
+                font-family: Arial, Helvetica, sans-serif;
+}
+	</style>
+{% block body-content %}
+    <h1>上传文件列表</h1>
+
+    <table border='1' bordercolor="black" cellspacing="0">
+    {% for item in all_list %}
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.filename}}</td>
+            <td>{{item.file_path}}</td>
+            <td>{{item.create_date}}</td>
+        </tr>
+    {% endfor %}
+    <div class="Paging" id='Pageing'>
+			{{page}}
+	</div>
+    </table>
+
+
+{% endblock %}

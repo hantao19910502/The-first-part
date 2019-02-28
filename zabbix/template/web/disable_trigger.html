@@ -1,0 +1,27 @@
+{% extends 'web/ziban.html' %}
+{% block disable %}
+    <legend><h3>线上打开/关闭机器触发器监控</h3></legend>
+	<ul class="nav nav-tabs nav-justified">
+             <li role="presentation" class="active"><a href='/web/disable_trigger/'>线上</a></li>
+             <li role="presentation" ><a href='/web01/disable_trigger/'>线下</a></li>
+          </ul>
+        <br/>
+
+    <form action="/web/disable_trigger/" method="POST">
+        <textarea name="hostname" placeholder="hostname"></textarea>
+        <br>
+        <textarea name="triggername" placeholder="triggername"></textarea>
+        
+        <br/>
+        <input type="radio" name="genber1" value="male1"/>打开
+        <br>
+        <input type="radio" name="genber1" value="female1"/>关闭
+        <br/>
+        <input type="submit" value="提交">
+        <!-- {% ifequal status  "主机操作已完成"%}
+            <span style='color:green'>{{status}}</span>
+        {%  else %}
+            <span style='color:red'>{{status}}</span>
+        {%  endifequal %} -->
+    </form>
+{% endblock %}
